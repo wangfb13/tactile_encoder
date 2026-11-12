@@ -1,0 +1,65 @@
+{
+  "audited_at_utc": "2026-11-11T23:49:37.347586+00:00",
+  "status": "passed",
+  "cloud_active_jobs": 0,
+  "cloud_active_gpus": 0,
+  "original_source_unchanged": true,
+  "frozen_scientific_release_unchanged": true,
+  "data_files_sha256_verified": 26,
+  "runs": [
+    {
+      "run": "final_mae_s0",
+      "checkpoint_sha256": "db5e5a4c5c7a3635b14a779d7769f08fcfb2b81521582ceb66cc44218b9d2f86",
+      "seed": 0,
+      "lambda_force": 0.0,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    },
+    {
+      "run": "final_mae_s1",
+      "checkpoint_sha256": "e08e4f8a820ba08ada10181e5140218e479d2f4716fa4d9755a72ad45f4c572e",
+      "seed": 1,
+      "lambda_force": 0.0,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    },
+    {
+      "run": "final_mae_s2",
+      "checkpoint_sha256": "df2426f73f920dd2d1e0e24d080b6bef19b9476ebfdef4b9d9dbed9c5bc3d4a4",
+      "seed": 2,
+      "lambda_force": 0.0,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    },
+    {
+      "run": "final_force_s0",
+      "checkpoint_sha256": "ce9f99476bf7477c1b3109779033e14118852d8863d557802c13a6b715f394aa",
+      "seed": 0,
+      "lambda_force": 0.3,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    },
+    {
+      "run": "final_force_s1",
+      "checkpoint_sha256": "b25ce709a04b5cedf673e2f5e47fe57e711f55648a8195a61bfb2b777c002071",
+      "seed": 1,
+      "lambda_force": 0.3,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    },
+    {
+      "run": "final_force_s2",
+      "checkpoint_sha256": "849e2ac24e9fc0e87b1979fae7c1b25898123fe4bfbbe4108d0fff4a2facfe93",
+      "seed": 2,
+      "lambda_force": 0.3,
+      "data_signature": "de86839e97426d1f3086703692a9ae71b82f028a63a10870b511391db47988b1",
+      "epochs": 100
+    }
+  ],
+  "report_evidence_verified": true,
+  "visual_review": [
+    "test_comparison.png",
+    "final_mae_s0 val_01_index_0002083.png"
+  ],
+  "independent_scientific_audit": "completed; recommend MAE baseline; no overall gain from force supervision; dual-finger benefits apply to paired targets"
+}

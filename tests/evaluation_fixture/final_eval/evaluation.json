@@ -1,0 +1,3663 @@
+{
+  "schema_version": 1,
+  "mode": "final",
+  "checkpoint": "tests/evaluation_fixture/fixture.pt",
+  "checkpoint_sha256": "5ac69320c634e60345dd128e58a17365ae4ed3d64b37e14436a68c08aef3a93e",
+  "data_signature": "6585a64b4b4f346353295610191161c698ccaa06d1f59e3b04cac0bdbb53febf",
+  "data_provenance": {
+    "normalization_sha256": "938207be3b7ccb603544e6f56868d402eac8088095f0eeef290a07c640fb5bd4",
+    "manifest_sha256": {
+      "train": "c440a7ba59052afca618a86fee94f0f6514e617aa28123be4d52354a4f4ebfbf",
+      "val": "305e75059464701e8444eacb1e116e932e6bf93165ca3c2d8b4b1221301af619",
+      "test": "7623730cad604766fd2f0ebc7cdc48fd60f017316e5f78efda69a049e50d1a7d",
+      "ood_funnel": "bd1abfdc9a673cbd7d03c51019fb480f535a7cae5cfe558fab759c2bbeec6050",
+      "ood_cups": "6e0f1b0aca1548862105afa5e533403b9d276894af640c3038a2ea4a41620ceb"
+    }
+  },
+  "lambda_force": 0.0,
+  "seed": 0,
+  "evaluation_time_utc": "2026-11-11T16:33:41Z",
+  "split_pair_counts": {
+    "train": 40,
+    "val": 16,
+    "test": 16,
+    "ood_funnel": 12,
+    "ood_cups": 12
+  },
+  "encoder_feature_health": {
+    "mean_feature_std": 0.05927358940243721,
+    "near_constant_dimensions": 0,
+    "effective_rank_covariance": 19.075353622436523,
+    "dimension": 48,
+    "rank_sample_count": 80
+  },
+  "per_finger": {
+    "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/per_finger.pt",
+    "selected_alphas": {
+      "geometry": 1.0,
+      "force": 1.0,
+      "contact": 0.01
+    },
+    "splits": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.23090386131497675,
+            0.23003505410864217,
+            0.23641486979803342,
+            0.2647618500024034,
+            0.250741151407831,
+            0.25845973655020066
+          ],
+          "valid_per_component": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "nrmse": 1.153859479577759,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.153859479577759
+            }
+          },
+          "macro_task_nrmse": 1.153859479577759,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0447038954418129,
+            1.1952497815518102
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.187498494197493,
+            1.3692734418544055,
+            1.3042342260897413,
+            1.0537672761381052,
+            0.9635293014695216,
+            1.1774693689843205
+          ],
+          "valid_per_component": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            26
+          ],
+          "nrmse": 1.1490145770867664,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.1490145770867664
+            }
+          },
+          "macro_task_nrmse": 1.1490145770867664,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0737413385834595,
+            1.2255804153360363
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.5436507936507937,
+          "macro_f1": 0.530791788856305,
+          "brier": 0.3652905225753784,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.5436507936507937,
+              "macro_f1": 0.530791788856305,
+              "brier": 0.3652905225753784
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5436507936507937,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.4680610452349583,
+            0.594313725490196
+          ]
+        }
+      },
+      "test": {
+        "geometry": {
+          "rmse_per_component": [
+            0.2902071036819145,
+            0.27104717517819377,
+            0.22989111458332087,
+            0.2603783897243962,
+            0.22066830160605203,
+            0.27239982256815876
+          ],
+          "valid_per_component": [
+            15,
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "nrmse": 1.2100739132246772,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.2100739132246772
+            }
+          },
+          "macro_task_nrmse": 1.2100739132246772,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.10925226477913,
+            1.323915577740237
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.2364733280771334,
+            1.070914495981898,
+            0.9850894212555366,
+            1.1825422393964826,
+            0.9626006333888601,
+            1.1952735276962732
+          ],
+          "valid_per_component": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            26
+          ],
+          "nrmse": 1.0834003551434728,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.0834003551434728
+            }
+          },
+          "macro_task_nrmse": 1.0834003551434728,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.020496711335315,
+            1.141411145009584
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.5058823529411764,
+          "macro_f1": 0.4980392156862745,
+          "brier": 0.4162229299545288,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.5058823529411764,
+              "macro_f1": 0.4980392156862745,
+              "brier": 0.4162229299545288
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5058823529411764,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.24092023172905525,
+            0.6740890688259109
+          ]
+        }
+      },
+      "ood_funnel": {
+        "geometry": {
+          "rmse_per_component": [
+            0.2705115752632461,
+            0.2053324034743956,
+            0.22071639943566568,
+            0.3027044011652174,
+            0.32249650842986427,
+            0.24412396652902624
+          ],
+          "valid_per_component": [
+            13,
+            13,
+            13,
+            13,
+            13,
+            13
+          ],
+          "nrmse": 1.223557020006906,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 24,
+              "nrmse": 1.223557020006906
+            }
+          },
+          "macro_task_nrmse": 1.223557020006906,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.1321673994219206,
+            1.400144387439999
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            1.0407469440298964,
+            1.174196241632172,
+            1.1536257751420356,
+            1.3314978761291945,
+            1.0684914051139238,
+            1.2193352492289424
+          ],
+          "valid_per_component": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            20
+          ],
+          "nrmse": 1.1382431922983842,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 24,
+              "nrmse": 1.1382431922983842
+            }
+          },
+          "macro_task_nrmse": 1.1382431922983842,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9449042652813316,
+            1.214435354966082
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.5104895104895105,
+          "macro_f1": 0.49650349650349646,
+          "brier": 0.34679949283599854,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "balanced_accuracy": 0.5104895104895105,
+              "macro_f1": 0.49650349650349646,
+              "brier": 0.34679949283599854
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5104895104895105,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.49650349650349646,
+            0.5894444444444443
+          ]
+        }
+      },
+      "ood_cups": {
+        "geometry": {
+          "rmse_per_component": [
+            0.1891985884240784,
+            0.20410561724283116,
+            0.19657133108937117,
+            0.2672947835101074,
+            0.24265090680284815,
+            0.2154238358946686
+          ],
+          "valid_per_component": [
+            13,
+            13,
+            13,
+            13,
+            13,
+            13
+          ],
+          "nrmse": 1.0273509325464305,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 24,
+              "nrmse": 1.0273509325464305
+            }
+          },
+          "macro_task_nrmse": 1.0273509325464305,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.91571280577114,
+            1.2944621918766293
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            0.8796182644725178,
+            1.0877901004573423,
+            1.1485633348653355,
+            1.215617400654736,
+            1.0260742233971996,
+            0.8765713342775637
+          ],
+          "valid_per_component": [
+            24,
+            24,
+            24,
+            24,
+            24,
+            20
+          ],
+          "nrmse": 1.0132291445425945,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 24,
+              "nrmse": 1.0132291445425945
+            }
+          },
+          "macro_task_nrmse": 1.0132291445425945,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.8162168729960161,
+            1.1054452395417178
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.5279720279720279,
+          "macro_f1": 0.5208711433756805,
+          "brier": 0.36858272552490234,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "balanced_accuracy": 0.5279720279720279,
+              "macro_f1": 0.5208711433756805,
+              "brier": 0.36858272552490234
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5279720279720279,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.41666666666666663,
+            0.6334033613445378
+          ]
+        }
+      }
+    }
+  },
+  "per_finger_sides": {
+    "left": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.23419668248909034,
+            0.26957166064745736,
+            0.2321051675729103,
+            0.23096642666632566,
+            0.262700346717671,
+            0.2593781873208425
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 1.1709106459778245,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1709106459778245
+            }
+          },
+          "macro_task_nrmse": 1.1709106459778245,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.033477269994972,
+            1.2524955168991165
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.1442902086597269,
+            1.389074082213647,
+            1.273391254732093,
+            1.3157110444335633,
+            1.0105062753066316,
+            1.0258637372936905
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.164079919345322,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.164079919345322
+            }
+          },
+          "macro_task_nrmse": 1.164079919345322,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0117761005380472,
+            1.3095777629472856
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.5,
+          "macro_f1": 0.5,
+          "brier": 0.3319489657878876,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.5,
+              "macro_f1": 0.5,
+              "brier": 0.3319489657878876
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.375,
+            0.625
+          ]
+        }
+      },
+      "test": {
+        "geometry": {
+          "rmse_per_component": [
+            0.22170051107197153,
+            0.21234968563089798,
+            0.1871885892552954,
+            0.24832171735115627,
+            0.16617564847649477,
+            0.22691897268264136
+          ],
+          "valid_per_component": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "nrmse": 0.9850341043307385,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 0.9850341043307385
+            }
+          },
+          "macro_task_nrmse": 0.9850341043307385,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9005682357720315,
+            0.9991677790349521
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.280356956568566,
+            1.2385502471926046,
+            0.8933809705625212,
+            1.2935285019272504,
+            0.9336199896408967,
+            1.3501101739600008
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.141207419994834,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.141207419994834
+            }
+          },
+          "macro_task_nrmse": 1.141207419994834,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9852565720555894,
+            1.2135310907640584
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.6272727272727273,
+          "macro_f1": 0.5607843137254902,
+          "brier": 0.38216209411621094,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.6272727272727273,
+              "macro_f1": 0.5607843137254902,
+              "brier": 0.38216209411621094
+            }
+          },
+          "macro_task_balanced_accuracy": 0.6272727272727273,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.4282852564102564,
+            0.75
+          ]
+        }
+      },
+      "ood_funnel": {
+        "geometry": {
+          "rmse_per_component": [
+            0.22954167258617564,
+            0.15150525103177886,
+            0.24504746133064906,
+            0.3409361546784457,
+            0.370778514081954,
+            0.26743825333523275
+          ],
+          "valid_per_component": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "nrmse": 1.2530623354423205,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 12,
+              "nrmse": 1.2530623354423205
+            }
+          },
+          "macro_task_nrmse": 1.2530623354423205,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9201968892993228,
+            1.5663770930439114
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            1.2764257151526277,
+            1.3914325098340252,
+            1.2503812208599616,
+            1.236884997614825,
+            1.131376421698129,
+            1.0463241266495928
+          ],
+          "valid_per_component": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            10
+          ],
+          "nrmse": 1.1932801180015178,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 12,
+              "nrmse": 1.1932801180015178
+            }
+          },
+          "macro_task_nrmse": 1.1932801180015178,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0411507235568767,
+            1.260347538590204
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.4857142857142857,
+          "macro_f1": 0.4857142857142857,
+          "brier": 0.34005096554756165,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "balanced_accuracy": 0.4857142857142857,
+              "macro_f1": 0.4857142857142857,
+              "brier": 0.34005096554756165
+            }
+          },
+          "macro_task_balanced_accuracy": 0.4857142857142857,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.25,
+            0.625
+          ]
+        }
+      },
+      "ood_cups": {
+        "geometry": {
+          "rmse_per_component": [
+            0.21612250114042103,
+            0.2186650996983119,
+            0.24537216238517742,
+            0.28872252395497,
+            0.2678067309760854,
+            0.1821758220064085
+          ],
+          "valid_per_component": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "nrmse": 1.115765290560773,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 12,
+              "nrmse": 1.115765290560773
+            }
+          },
+          "macro_task_nrmse": 1.115765290560773,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9335239649598128,
+            1.2135224010863552
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            0.8332011276915084,
+            1.2609566196660722,
+            1.0674208959711646,
+            1.3936514621450538,
+            0.9581392478671491,
+            0.954905912947337
+          ],
+          "valid_per_component": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            10
+          ],
+          "nrmse": 1.0499053662552635,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 12,
+              "nrmse": 1.0499053662552635
+            }
+          },
+          "macro_task_nrmse": 1.0499053662552635,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.902719789607275,
+            1.137285321376305
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.5428571428571429,
+          "macro_f1": 0.4857142857142857,
+          "brier": 0.4651999771595001,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "balanced_accuracy": 0.5428571428571429,
+              "macro_f1": 0.4857142857142857,
+              "brier": 0.4651999771595001
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5428571428571429,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.37142857142857144,
+            0.7330357142857142
+          ]
+        }
+      }
+    },
+    "right": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.22823540876782117,
+            0.1926497645342269,
+            0.23980687258641892,
+            0.2889662917585277,
+            0.2407464377396206,
+            0.25772258462154257
+          ],
+          "valid_per_component": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "nrmse": 1.1332894965678009,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1332894965678009
+            }
+          },
+          "macro_task_nrmse": 1.1332894965678009,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.010551690997019,
+            1.1537502732536822
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.229188864987031,
+            1.3491821054364996,
+            1.3343644277971252,
+            0.6998252795354761,
+            0.9141413336773023,
+            1.311667601055257
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.1152862687841527,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1152862687841527
+            }
+          },
+          "macro_task_nrmse": 1.1152862687841527,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0310853752762974,
+            1.1821931037164088
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.6166666666666667,
+          "macro_f1": 0.5607843137254902,
+          "brier": 0.3986320495605469,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.6166666666666667,
+              "macro_f1": 0.5607843137254902,
+              "brier": 0.3986320495605469
+            }
+          },
+          "macro_task_balanced_accuracy": 0.6166666666666667,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.43740079365079365,
+            0.7229545454545455
+          ]
+        }
+      },
+      "test": {
+        "geometry": {
+          "rmse_per_component": [
+            0.31899012702204865,
+            0.29606360933797815,
+            0.24850574012052218,
+            0.2662020529973793,
+            0.24338153474926807,
+            0.2925002357286335
+          ],
+          "valid_per_component": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "nrmse": 1.3066300523461158,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.3066300523461158
+            }
+          },
+          "macro_task_nrmse": 1.3066300523461158,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.193246180575376,
+            1.423791121194652
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.1909739225849338,
+            0.8716129073115589,
+            1.068958902298761,
+            1.059998428415537,
+            0.9907338765478634,
+            1.017133254216536
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.013242343944411,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.013242343944411
+            }
+          },
+          "macro_task_nrmse": 1.013242343944411,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.9258200125323952,
+            1.0793522889352705
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.41666666666666663,
+          "macro_f1": 0.41700404858299595,
+          "brier": 0.4502837657928467,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.41666666666666663,
+              "macro_f1": 0.41700404858299595,
+              "brier": 0.4502837657928467
+            }
+          },
+          "macro_task_balanced_accuracy": 0.41666666666666663,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.12291666666666666,
+            0.625
+          ]
+        }
+      },
+      "ood_funnel": {
+        "geometry": {
+          "rmse_per_component": [
+            0.2932251126476081,
+            0.23273615065220932,
+            0.20404138544913786,
+            0.27613448735693924,
+            0.2882421942619243,
+            0.22834692539676496
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 1.1905616037192173,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 12,
+              "nrmse": 1.1905616037192173
+            }
+          },
+          "macro_task_nrmse": 1.1905616037192173,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.8795166634308407,
+            1.2138954224219418
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            0.732834085391939,
+            0.9063052456558015,
+            1.0479749907283173,
+            1.4198200061607125,
+            1.0016662305893373,
+            1.3706796221757838
+          ],
+          "valid_per_component": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            10
+          ],
+          "nrmse": 1.0562998398648942,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "n": 12,
+              "nrmse": 1.0562998398648942
+            }
+          },
+          "macro_task_nrmse": 1.0562998398648942,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.8331799191201217,
+            1.1303262640896279
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.5625,
+          "macro_f1": 0.5,
+          "brier": 0.3535480499267578,
+          "by_task": {
+            "synthetic_ood_funnel": {
+              "balanced_accuracy": 0.5625,
+              "macro_f1": 0.5,
+              "brier": 0.3535480499267578
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5625,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.5,
+            0.8333333333333333
+          ]
+        }
+      },
+      "ood_cups": {
+        "geometry": {
+          "rmse_per_component": [
+            0.17022217599612074,
+            0.19445316095531923,
+            0.15862149385841504,
+            0.2529824249784266,
+            0.22550796218039804,
+            0.23381520812672132
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 0.9595400860099358,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 12,
+              "nrmse": 0.9595400860099358
+            }
+          },
+          "macro_task_nrmse": 0.9595400860099358,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.8741335491453002,
+            1.2754493067463109
+          ],
+          "episode_count": 3
+        },
+        "force": {
+          "rmse_per_component": [
+            0.9237057454921278,
+            0.8812283506507269,
+            1.2243398950907944,
+            1.006571871060436,
+            1.0897825672837151,
+            0.7905121432487026
+          ],
+          "valid_per_component": [
+            12,
+            12,
+            12,
+            12,
+            12,
+            10
+          ],
+          "nrmse": 0.9631457665648381,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "n": 12,
+              "nrmse": 0.9631457665648381
+            }
+          },
+          "macro_task_nrmse": 0.9631457665648381,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            0.6841432093974774,
+            1.0609984054489376
+          ],
+          "episode_count": 3
+        },
+        "contact": {
+          "balanced_accuracy": 0.5625,
+          "macro_f1": 0.5555555555555556,
+          "brier": 0.27196553349494934,
+          "by_task": {
+            "synthetic_ood_cups": {
+              "balanced_accuracy": 0.5625,
+              "macro_f1": 0.5555555555555556,
+              "brier": 0.27196553349494934
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5625,
+          "episode_count": 3,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.16666666666666666,
+            0.8571590909090909
+          ]
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "Force targets are X5 SDK estimates, not independent physical force ground truth.",
+    "Contact geometry is a fixed DD-derived proxy, not manually verified truth.",
+    "Single/paired representations are evaluated on identical paired timestamps and target sets.",
+    "Episode bootstrap intervals do not treat individual frames as independent.",
+    "Hyperparameters and checkpoint/lambda selection never use final test or OOD."
+  ],
+  "paired_same_target": {
+    "single_left": {
+      "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/single_left.pt",
+      "selected_alphas": {
+        "geometry": 1.0,
+        "force": 1.0,
+        "contact": 0.01
+      },
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.24612947234996307,
+              0.23732198644308214,
+              0.28467500916766847,
+              0.2207032769126707,
+              0.21883794174864446,
+              0.2973055854034999,
+              0.17818736941982743,
+              0.1641984467155318,
+              0.22257320796292693,
+              0.26028920805590083,
+              0.25546181345630536,
+              0.18483733384515816
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.0962815736587743,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.0962815736587743
+              }
+            },
+            "macro_task_nrmse": 1.0962815736587743,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.934928277246525,
+              1.1605346412512425
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.2034050751713323,
+              1.3798262253137525,
+              1.3624184837804405,
+              1.420462189393717,
+              1.091888806016148,
+              1.0558170367109134,
+              1.3130758475500843,
+              1.181246958330063,
+              1.3198757013405225,
+              1.1415441807013975,
+              0.8504427976641618,
+              1.303602360386127
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.2023220749897503,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.2023220749897503
+              }
+            },
+            "macro_task_nrmse": 1.2023220749897503,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1212501571287512,
+              1.2627385399145923
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.5458333333333333,
+            "macro_f1": 0.5428571428571428,
+            "brier": 0.3915981948375702,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.5458333333333333,
+                "macro_f1": 0.5428571428571428,
+                "brier": 0.3915981948375702
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5458333333333333,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.40377185314685315,
+              0.6165674603174602
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2082898301162331,
+              0.1373366751383843,
+              0.23903879534312503,
+              0.294729248196428,
+              0.18617453973026069,
+              0.32536995811820657,
+              0.27730316080010853,
+              0.2695620201348912,
+              0.2744859051586025,
+              0.297639615052129,
+              0.200079691924335,
+              0.19610287010596114
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1496541986660356,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1496541986660356
+              }
+            },
+            "macro_task_nrmse": 1.1496541986660356,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0954224292836894,
+              1.203920344577152
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.343883729534663,
+              1.260431158229445,
+              0.8810811239448347,
+              1.2498039568710992,
+              0.9418425439357108,
+              1.2600887750784568,
+              1.3627847024085329,
+              1.2490835167913557,
+              1.211785591687303,
+              1.1917736550078681,
+              1.3139810834013634,
+              1.191013097174513
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.1878041390180245,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1878041390180245
+              }
+            },
+            "macro_task_nrmse": 1.1878041390180245,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1253374424834452,
+              1.2208194522975584
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.4553030303030303,
+            "macro_f1": 0.43434343434343436,
+            "brier": 0.42841005325317383,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.4553030303030303,
+                "macro_f1": 0.43434343434343436,
+                "brier": 0.42841005325317383
+              }
+            },
+            "macro_task_balanced_accuracy": 0.4553030303030303,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3419951923076923,
+              0.5561383928571428
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.23278037239981633,
+              0.1361445986928415,
+              0.30265326613184707,
+              0.2964901789121015,
+              0.3536981438145615,
+              0.3551396785550436,
+              0.26092884083616813,
+              0.2450010244800596,
+              0.21379138526372604,
+              0.2866530392470199,
+              0.3421171486183272,
+              0.17870111907502917
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.2683630542883395,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2683630542883395
+              }
+            },
+            "macro_task_nrmse": 1.2683630542883395,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1265720216490243,
+              1.3356133913667672
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4506796767572359,
+              1.2726494782893878,
+              1.2963869946150837,
+              1.2748850452735374,
+              1.0990038797543196,
+              1.0202827110440136,
+              0.8659383121864331,
+              0.9501188220620516,
+              1.2083793280606103,
+              1.6254597527019268,
+              0.8614058571223039,
+              1.3922933450487336
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.1870433083311218,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.1870433083311218
+              }
+            },
+            "macro_task_nrmse": 1.1870433083311218,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9633119944367999,
+              1.2567224466472908
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5839285714285715,
+            "macro_f1": 0.5533834586466165,
+            "brier": 0.33474811911582947,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.5839285714285715,
+                "macro_f1": 0.5533834586466165,
+                "brier": 0.33474811911582947
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5839285714285715,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.4583333333333333,
+              0.6165178571428571
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.23294646741813166,
+              0.23067143466418807,
+              0.2507750299460753,
+              0.30490465495271085,
+              0.25723052952284553,
+              0.2465965100560429,
+              0.18973615485846132,
+              0.22636390071454268,
+              0.15498375411418358,
+              0.21872722984059828,
+              0.1907765286522969,
+              0.2305191437535367
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.0767136127396182,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0767136127396182
+              }
+            },
+            "macro_task_nrmse": 1.0767136127396182,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9831640371522274,
+              1.159876911337767
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.8654087370311924,
+              1.1698601249485256,
+              1.0194026627208752,
+              1.3443237380985833,
+              0.9491359428633366,
+              0.8785014258662438,
+              1.0659109975412404,
+              1.0821963481521162,
+              1.3245998498095486,
+              0.9199843766779424,
+              1.117827687759745,
+              0.8051127374974056
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.024759676259575,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.024759676259575
+              }
+            },
+            "macro_task_nrmse": 1.024759676259575,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.845479489699731,
+              1.0985160994493717
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5928571428571429,
+            "macro_f1": 0.5761904761904761,
+            "brier": 0.36283257603645325,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.5928571428571429,
+                "macro_f1": 0.5761904761904761,
+                "brier": 0.36283257603645325
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5928571428571429,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.4480357142857143,
+              0.7937499999999998
+            ]
+          }
+        }
+      }
+    },
+    "single_right": {
+      "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/single_right.pt",
+      "selected_alphas": {
+        "geometry": 1.0,
+        "force": 1.0,
+        "contact": 0.0001
+      },
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.30038920775477274,
+              0.22176871843585325,
+              0.2078989935261812,
+              0.24947503225183168,
+              0.20315617542180392,
+              0.3086677776345685,
+              0.23138540273205038,
+              0.14727217358668118,
+              0.23485315503280665,
+              0.3109711058585573,
+              0.24435966736286782,
+              0.30385179595667594
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1634801695880357,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1634801695880357
+              }
+            },
+            "macro_task_nrmse": 1.1634801695880357,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0367184042654856,
+              1.2144650807607782
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              0.9626934476382767,
+              1.3104853835937251,
+              0.9575475117720649,
+              1.4519944253609574,
+              0.9883597120417587,
+              1.046638856306839,
+              1.2014219442437164,
+              1.5308387359761921,
+              1.3108157750429232,
+              0.7334585355676654,
+              1.0131061717407097,
+              1.390719108067863
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.1329724098068519,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1329724098068519
+              }
+            },
+            "macro_task_nrmse": 1.1329724098068519,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0533428379191228,
+              1.1920378452815106
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.53125,
+            "macro_f1": 0.5264239028944911,
+            "brier": 0.42972931265830994,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.53125,
+                "macro_f1": 0.5264239028944911,
+                "brier": 0.42972931265830994
+              }
+            },
+            "macro_task_balanced_accuracy": 0.53125,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.38112637362637364,
+              0.5772941468253968
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.30619734291939543,
+              0.3420471321555623,
+              0.14897927245997528,
+              0.17786082705491724,
+              0.3030596947865651,
+              0.2100725595823006,
+              0.27296375106313103,
+              0.2412002746449199,
+              0.3045732039260166,
+              0.30863562191204874,
+              0.2525539479364179,
+              0.286726373056631
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.2530727153336905,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.2530727153336905
+              }
+            },
+            "macro_task_nrmse": 1.2530727153336905,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0880708382658042,
+              1.390853025087236
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4380286530039488,
+              1.3530062863471017,
+              1.1237255400986086,
+              1.5146086126191698,
+              0.8554789921395654,
+              1.2294405450123758,
+              1.466370379619426,
+              0.6860600477162463,
+              1.0697470514836767,
+              0.9640972322856932,
+              0.9650299572124242,
+              1.2052201388433328
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.1440780207750396,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1440780207750396
+              }
+            },
+            "macro_task_nrmse": 1.1440780207750396,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0673255731076292,
+              1.1944768593113182
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.4840909090909091,
+            "macro_f1": 0.4823702613176298,
+            "brier": 0.4710592031478882,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.4840909090909091,
+                "macro_f1": 0.4823702613176298,
+                "brier": 0.4710592031478882
+              }
+            },
+            "macro_task_balanced_accuracy": 0.4840909090909091,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3937003968253968,
+              0.6566987179487179
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.18219619612444551,
+              0.25818019424625616,
+              0.21849467499308922,
+              0.2969603265312112,
+              0.2826773346838685,
+              0.3413730805998529,
+              0.32443113150066166,
+              0.257840761889771,
+              0.1978557842290006,
+              0.25720223534088765,
+              0.3139683914577396,
+              0.21675779660600036
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.2437398223327096,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2437398223327096
+              }
+            },
+            "macro_task_nrmse": 1.2437398223327096,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8522252410356308,
+              1.2867724881165299
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.3577954699842436,
+              1.0776200885927014,
+              1.2882977307439294,
+              1.132572017005101,
+              1.329462372862251,
+              1.1146872546273516,
+              0.5664585484004714,
+              1.0219483546566177,
+              1.096250310163407,
+              1.3706456798982776,
+              1.2041911895965225,
+              1.146287714713171
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.1342366452922974,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.1342366452922974
+              }
+            },
+            "macro_task_nrmse": 1.1342366452922974,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8742565211949058,
+              1.2172808113280829
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.6196428571428572,
+            "macro_f1": 0.5804195804195804,
+            "brier": 0.4127662181854248,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.6196428571428572,
+                "macro_f1": 0.5804195804195804,
+                "brier": 0.4127662181854248
+              }
+            },
+            "macro_task_balanced_accuracy": 0.6196428571428572,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.5906845238095237,
+              0.7916666666666666
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.18389457244227578,
+              0.25867749382329236,
+              0.20095282915890125,
+              0.3301891614159819,
+              0.28696704891996316,
+              0.35856759967073204,
+              0.12134748839215247,
+              0.23757019417347813,
+              0.1889624287453429,
+              0.2881548265753574,
+              0.26297536620658457,
+              0.2778297518081883
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.1644757544470412,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.1644757544470412
+              }
+            },
+            "macro_task_nrmse": 1.1644757544470412,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0081941296066497,
+              1.3397453774518537
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.7469614784899556,
+              1.2734765044871756,
+              1.3828618674796176,
+              1.1938484883581797,
+              1.0135926477222301,
+              1.1908848756741246,
+              0.884023775016897,
+              1.0361228029161305,
+              1.135442762629111,
+              0.8971861597483195,
+              1.0894066447923347,
+              0.9023960114904959
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0432796963535245,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0432796963535245
+              }
+            },
+            "macro_task_nrmse": 1.0432796963535245,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8984513178434345,
+              1.0955509974631759
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5598214285714286,
+            "macro_f1": 0.5555555555555556,
+            "brier": 0.3441868722438812,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.5598214285714286,
+                "macro_f1": 0.5555555555555556,
+                "brier": 0.3441868722438812
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5598214285714286,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.16666666666666666,
+              0.8333333333333334
+            ]
+          }
+        }
+      }
+    },
+    "concat": {
+      "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/concat.pt",
+      "selected_alphas": {
+        "geometry": 1.0,
+        "force": 1.0,
+        "contact": 0.0001
+      },
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2555354739905202,
+              0.19833042267024645,
+              0.2213280783968633,
+              0.23988796472723573,
+              0.174139044794278,
+              0.28585974256184843,
+              0.2147627244228236,
+              0.15315163439116136,
+              0.23494513784355206,
+              0.3242337694480925,
+              0.25834577489446725,
+              0.28596053942637617
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1202015332891488,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1202015332891488
+              }
+            },
+            "macro_task_nrmse": 1.1202015332891488,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9629433014585832,
+              1.1722564303309058
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.1091457183735989,
+              1.5068004156488302,
+              1.263016780047123,
+              1.4020457681703231,
+              1.1490825476413544,
+              1.1377065643529927,
+              1.3542490811822825,
+              1.3697661142419624,
+              1.3360261497308306,
+              1.0360892643527246,
+              0.809186745625954,
+              1.4386364071442836
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.2234487481199965,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.2234487481199965
+              }
+            },
+            "macro_task_nrmse": 1.2234487481199965,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1170264191178039,
+              1.3040432527488695
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.49583333333333335,
+            "macro_f1": 0.4950396825396825,
+            "brier": 0.48795586824417114,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.49583333333333335,
+                "macro_f1": 0.4950396825396825,
+                "brier": 0.48795586824417114
+              }
+            },
+            "macro_task_balanced_accuracy": 0.49583333333333335,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3753860722610723,
+              0.5610119047619048
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.24948692123901753,
+              0.27033108333148326,
+              0.18179937828973233,
+              0.15428951100993082,
+              0.2318828969058006,
+              0.27564008520110356,
+              0.2677467538795344,
+              0.25517924525774405,
+              0.2992158257164749,
+              0.3319371168550619,
+              0.2433713711006141,
+              0.24082881915559756
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1933234283033567,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1933234283033567
+              }
+            },
+            "macro_task_nrmse": 1.1933234283033567,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.087177473178091,
+              1.2683810811933827
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4029176010764697,
+              1.3269597495528223,
+              0.9614931066526816,
+              1.3956707484891167,
+              0.8801763216476449,
+              1.2973984164983543,
+              1.5692814720781572,
+              0.8827859992716816,
+              1.189125704996587,
+              1.221404486014781,
+              1.1517457606587638,
+              1.2747324344900837
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.199326229269442,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.199326229269442
+              }
+            },
+            "macro_task_nrmse": 1.199326229269442,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.118169162650875,
+              1.2584514001129345
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.5212121212121212,
+            "macro_f1": 0.5158541941150637,
+            "brier": 0.36648669838905334,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.5212121212121212,
+                "macro_f1": 0.5158541941150637,
+                "brier": 0.36648669838905334
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5212121212121212,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3933573717948718,
+              0.6438541666666666
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2364175422427243,
+              0.21161360998083967,
+              0.2856961717142812,
+              0.27824168382883174,
+              0.33109299879722476,
+              0.36517908014334666,
+              0.2640868277319053,
+              0.24599058774303817,
+              0.16657787928336348,
+              0.29554350814494823,
+              0.35121084215589077,
+              0.2041516037334465
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.2763123937246992,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2763123937246992
+              }
+            },
+            "macro_task_nrmse": 1.2763123937246992,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1248705155943195,
+              1.2763806376882478
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4257598457297471,
+              1.1666018377184855,
+              1.4300337686530757,
+              1.3212701759012941,
+              1.3322672555619286,
+              1.1401456897064093,
+              0.59061403483013,
+              1.1118626172393142,
+              1.3184140493099608,
+              1.576767189391453,
+              1.1613232087819196,
+              1.2633067055934837
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.2277885491432021,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2277885491432021
+              }
+            },
+            "macro_task_nrmse": 1.2277885491432021,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9673643957104271,
+              1.306619710849976
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5696428571428571,
+            "macro_f1": 0.5625,
+            "brier": 0.3843834698200226,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.5696428571428571,
+                "macro_f1": 0.5625,
+                "brier": 0.3843834698200226
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5696428571428571,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.5527678571428571,
+              0.6983786525974026
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.23234368299266514,
+              0.22557912048344256,
+              0.22301446308396436,
+              0.31587360901973527,
+              0.25683372119483977,
+              0.35098717980732447,
+              0.13844739178952276,
+              0.2134617136322064,
+              0.17454242745639892,
+              0.2580170542399545,
+              0.2311436179689402,
+              0.2662483502502551
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.1234730894811935,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.1234730894811935
+              }
+            },
+            "macro_task_nrmse": 1.1234730894811935,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9857926685072913,
+              1.269343698911552
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.740549146413514,
+              1.2999124766499768,
+              1.363034288832889,
+              1.2459788174775293,
+              1.0036074420031185,
+              0.9252247614619986,
+              0.9626670098009141,
+              1.001842708340915,
+              1.3652668568426711,
+              0.990040456028726,
+              0.9601839000009766,
+              0.7166468824568568
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0291785961581577,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0291785961581577
+              }
+            },
+            "macro_task_nrmse": 1.0291785961581577,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8891888167898426,
+              1.0702870684065235
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5285714285714286,
+            "macro_f1": 0.5256769374416433,
+            "brier": 0.4018658399581909,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.5285714285714286,
+                "macro_f1": 0.5256769374416433,
+                "brier": 0.4018658399581909
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5285714285714286,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3714285714285714,
+              0.8099801587301584
+            ]
+          }
+        }
+      }
+    },
+    "concat_difference": {
+      "equivalent_to": "concat",
+      "fit": "analytic_equivalent_linear_head_Wdiff_zero",
+      "dimension": 144,
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2555354739905202,
+              0.19833042267024645,
+              0.2213280783968633,
+              0.23988796472723573,
+              0.174139044794278,
+              0.28585974256184843,
+              0.2147627244228236,
+              0.15315163439116136,
+              0.23494513784355206,
+              0.3242337694480925,
+              0.25834577489446725,
+              0.28596053942637617
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1202015332891488,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1202015332891488
+              }
+            },
+            "macro_task_nrmse": 1.1202015332891488,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9629433014585832,
+              1.1722564303309058
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.1091457183735989,
+              1.5068004156488302,
+              1.263016780047123,
+              1.4020457681703231,
+              1.1490825476413544,
+              1.1377065643529927,
+              1.3542490811822825,
+              1.3697661142419624,
+              1.3360261497308306,
+              1.0360892643527246,
+              0.809186745625954,
+              1.4386364071442836
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.2234487481199965,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.2234487481199965
+              }
+            },
+            "macro_task_nrmse": 1.2234487481199965,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1170264191178039,
+              1.3040432527488695
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.49583333333333335,
+            "macro_f1": 0.4950396825396825,
+            "brier": 0.48795586824417114,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.49583333333333335,
+                "macro_f1": 0.4950396825396825,
+                "brier": 0.48795586824417114
+              }
+            },
+            "macro_task_balanced_accuracy": 0.49583333333333335,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3753860722610723,
+              0.5610119047619048
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.24948692123901753,
+              0.27033108333148326,
+              0.18179937828973233,
+              0.15428951100993082,
+              0.2318828969058006,
+              0.27564008520110356,
+              0.2677467538795344,
+              0.25517924525774405,
+              0.2992158257164749,
+              0.3319371168550619,
+              0.2433713711006141,
+              0.24082881915559756
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1933234283033567,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1933234283033567
+              }
+            },
+            "macro_task_nrmse": 1.1933234283033567,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.087177473178091,
+              1.2683810811933827
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4029176010764697,
+              1.3269597495528223,
+              0.9614931066526816,
+              1.3956707484891167,
+              0.8801763216476449,
+              1.2973984164983543,
+              1.5692814720781572,
+              0.8827859992716816,
+              1.189125704996587,
+              1.221404486014781,
+              1.1517457606587638,
+              1.2747324344900837
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.199326229269442,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.199326229269442
+              }
+            },
+            "macro_task_nrmse": 1.199326229269442,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.118169162650875,
+              1.2584514001129345
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.5212121212121212,
+            "macro_f1": 0.5158541941150637,
+            "brier": 0.36648669838905334,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.5212121212121212,
+                "macro_f1": 0.5158541941150637,
+                "brier": 0.36648669838905334
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5212121212121212,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3933573717948718,
+              0.6438541666666666
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2364175422427243,
+              0.21161360998083967,
+              0.2856961717142812,
+              0.27824168382883174,
+              0.33109299879722476,
+              0.36517908014334666,
+              0.2640868277319053,
+              0.24599058774303817,
+              0.16657787928336348,
+              0.29554350814494823,
+              0.35121084215589077,
+              0.2041516037334465
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.2763123937246992,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2763123937246992
+              }
+            },
+            "macro_task_nrmse": 1.2763123937246992,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.1248705155943195,
+              1.2763806376882478
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4257598457297471,
+              1.1666018377184855,
+              1.4300337686530757,
+              1.3212701759012941,
+              1.3322672555619286,
+              1.1401456897064093,
+              0.59061403483013,
+              1.1118626172393142,
+              1.3184140493099608,
+              1.576767189391453,
+              1.1613232087819196,
+              1.2633067055934837
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.2277885491432021,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.2277885491432021
+              }
+            },
+            "macro_task_nrmse": 1.2277885491432021,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9673643957104271,
+              1.306619710849976
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5696428571428571,
+            "macro_f1": 0.5625,
+            "brier": 0.3843834698200226,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.5696428571428571,
+                "macro_f1": 0.5625,
+                "brier": 0.3843834698200226
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5696428571428571,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.5527678571428571,
+              0.6983786525974026
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.23234368299266514,
+              0.22557912048344256,
+              0.22301446308396436,
+              0.31587360901973527,
+              0.25683372119483977,
+              0.35098717980732447,
+              0.13844739178952276,
+              0.2134617136322064,
+              0.17454242745639892,
+              0.2580170542399545,
+              0.2311436179689402,
+              0.2662483502502551
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.1234730894811935,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.1234730894811935
+              }
+            },
+            "macro_task_nrmse": 1.1234730894811935,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9857926685072913,
+              1.269343698911552
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.740549146413514,
+              1.2999124766499768,
+              1.363034288832889,
+              1.2459788174775293,
+              1.0036074420031185,
+              0.9252247614619986,
+              0.9626670098009141,
+              1.001842708340915,
+              1.3652668568426711,
+              0.990040456028726,
+              0.9601839000009766,
+              0.7166468824568568
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0291785961581577,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0291785961581577
+              }
+            },
+            "macro_task_nrmse": 1.0291785961581577,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8891888167898426,
+              1.0702870684065235
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5285714285714286,
+            "macro_f1": 0.5256769374416433,
+            "brier": 0.4018658399581909,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.5285714285714286,
+                "macro_f1": 0.5256769374416433,
+                "brier": 0.4018658399581909
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5285714285714286,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3714285714285714,
+              0.8099801587301584
+            ]
+          }
+        }
+      },
+      "note": "Explicit difference adds no information or linear expressiveness; separate L2 fits would change regularization."
+    }
+  },
+  "mlp_difference_ablation": {
+    "concat": {
+      "parameter_count": 119951,
+      "hidden_width": 975,
+      "target_parameter_budget": 120000,
+      "validation_trace": [
+        {
+          "epoch": 1,
+          "val_objective": 1.9229660034179688
+        },
+        {
+          "epoch": 2,
+          "val_objective": 1.931107521057129
+        }
+      ],
+      "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/mlp_concat.pt",
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.20170986126404614,
+              0.2433674356341073,
+              0.22201781176517643,
+              0.22301140284358456,
+              0.2555616845528161,
+              0.24605419204305937,
+              0.19125137291209787,
+              0.15403554007309447,
+              0.2273322348283794,
+              0.26133182448889025,
+              0.25237932456374995,
+              0.22492057140061347
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.070589554652354,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.070589554652354
+              }
+            },
+            "macro_task_nrmse": 1.070589554652354,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8951657847705398,
+              1.1463474326869816
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.1099205287630631,
+              1.169364019247558,
+              1.1165217303165684,
+              1.3721955917561142,
+              1.024049590433636,
+              0.9556459662381958,
+              1.1404518623110396,
+              1.1815429647142843,
+              1.1712476449818583,
+              0.784638229214835,
+              1.0457826865548423,
+              1.342428741815264
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.0983539877271864,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.0983539877271864
+              }
+            },
+            "macro_task_nrmse": 1.0983539877271864,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0298365679350392,
+              1.1568115143149227
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.3375,
+            "macro_f1": 0.303030303030303,
+            "brier": 0.26324567198753357,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.3375,
+                "macro_f1": 0.303030303030303,
+                "brier": 0.26324567198753357
+              }
+            },
+            "macro_task_balanced_accuracy": 0.3375,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.20026041666666666,
+              0.44640376984126984
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.21845788524939944,
+              0.22282938332814606,
+              0.22547927250302013,
+              0.16185526407182158,
+              0.2163803980290075,
+              0.1607979734452019,
+              0.24571681143723578,
+              0.2476120027792764,
+              0.23799227091717,
+              0.2511100799814601,
+              0.21306418946889638,
+              0.21769778729559713
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.051708264263946,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.051708264263946
+              }
+            },
+            "macro_task_nrmse": 1.051708264263946,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9838004102273086,
+              1.1226231574796828
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.2478545851170055,
+              1.1835172017841336,
+              1.047519713059254,
+              1.120852348043444,
+              0.943797734297571,
+              1.0990082157768042,
+              1.2440056600380587,
+              1.0376808330632126,
+              1.0802094584906423,
+              0.9595783204579794,
+              0.9329703895453499,
+              1.1046938179938637
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.0705912978437746,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.0705912978437746
+              }
+            },
+            "macro_task_nrmse": 1.0705912978437746,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0252820890134386,
+              1.090239342925322
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.4143939393939394,
+            "macro_f1": 0.37254901960784315,
+            "brier": 0.2647238075733185,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.4143939393939394,
+                "macro_f1": 0.37254901960784315,
+                "brier": 0.2647238075733185
+              }
+            },
+            "macro_task_balanced_accuracy": 0.4143939393939394,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.3645833333333333,
+              0.5077746212121211
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2101310502156508,
+              0.18128609462315082,
+              0.19666305517124233,
+              0.23628661997121217,
+              0.25546415832312785,
+              0.23818520032803037,
+              0.27462711412591,
+              0.2159793750913045,
+              0.25782293240796283,
+              0.24043149536841404,
+              0.27348449848082684,
+              0.19892152417458892
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.1059643204793719,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.1059643204793719
+              }
+            },
+            "macro_task_nrmse": 1.1059643204793719,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9544467871164115,
+              1.1178972887503764
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.4138588100016,
+              1.1824665808441406,
+              1.089028914091978,
+              1.2391590492888342,
+              1.0245819681496438,
+              0.9530265882371608,
+              0.6054887337616954,
+              0.9304737004453478,
+              1.040397761280976,
+              1.2354793196043072,
+              0.7901705776628207,
+              1.1461558818552888
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.048194591312053,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.048194591312053
+              }
+            },
+            "macro_task_nrmse": 1.048194591312053,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8519272470003317,
+              1.1022632853827365
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.6428571428571428,
+            "macro_f1": 0.616983016983017,
+            "brier": 0.24133221805095673,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.6428571428571428,
+                "macro_f1": 0.616983016983017,
+                "brier": 0.24133221805095673
+              }
+            },
+            "macro_task_balanced_accuracy": 0.6428571428571428,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.4583333333333333,
+              0.7927414772727273
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.17076977055142786,
+              0.1894898369210238,
+              0.2320559915523235,
+              0.26857855673399145,
+              0.2467226620751123,
+              0.22619723110342488,
+              0.15587036385673728,
+              0.23104243080734,
+              0.12791045968961468,
+              0.24509666174555297,
+              0.1848686672903187,
+              0.20787252584614804
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 0.9790751445030986,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 0.9790751445030986
+              }
+            },
+            "macro_task_nrmse": 0.9790751445030986,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8513580919910944,
+              1.0727583475115956
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.8678844045819658,
+              1.0889838505444527,
+              1.159678899345416,
+              1.1109533409852792,
+              0.9110589305801395,
+              1.1811950347868374,
+              0.828250995383992,
+              1.0023963745923354,
+              1.1570126192222936,
+              0.945440152379388,
+              1.2344827725648007,
+              0.7997218423306369
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0067966871854657,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0067966871854657
+              }
+            },
+            "macro_task_nrmse": 1.0067966871854657,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8160161389494055,
+              1.1000587899347107
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.3508928571428571,
+            "macro_f1": 0.35,
+            "brier": 0.2565583288669586,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.3508928571428571,
+                "macro_f1": 0.35,
+                "brier": 0.2565583288669586
+              }
+            },
+            "macro_task_balanced_accuracy": 0.3508928571428571,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.22857142857142856,
+              0.5724206349206347
+            ]
+          }
+        }
+      }
+    },
+    "concat_difference": {
+      "parameter_count": 119897,
+      "hidden_width": 701,
+      "target_parameter_budget": 120000,
+      "validation_trace": [
+        {
+          "epoch": 1,
+          "val_objective": 1.9947739839553833
+        },
+        {
+          "epoch": 2,
+          "val_objective": 1.9963058233261108
+        }
+      ],
+      "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/final_eval/probes/mlp_concat_difference.pt",
+      "splits": {
+        "val": {
+          "geometry": {
+            "rmse_per_component": [
+              0.21406582530425183,
+              0.2607983875071958,
+              0.25512815046257614,
+              0.24457963763330798,
+              0.24554720238649522,
+              0.27280166814215745,
+              0.1796555532168885,
+              0.16365975492117593,
+              0.22637180326954587,
+              0.2528432455334825,
+              0.2533204113232869,
+              0.23559403334900506
+            ],
+            "valid_per_component": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.1093208251485802,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1093208251485802
+              }
+            },
+            "macro_task_nrmse": 1.1093208251485802,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9263075151094083,
+              1.1842289510429227
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.043340495291149,
+              1.1165320334240247,
+              1.0832688177901062,
+              1.5248074363076847,
+              1.0415721786877965,
+              0.9537000040110181,
+              1.1690796637071783,
+              1.277115501052614,
+              1.2331436872733927,
+              0.846840461505254,
+              1.12557534234857,
+              1.3980657315313332
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.1288147224432725,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.1288147224432725
+              }
+            },
+            "macro_task_nrmse": 1.1288147224432725,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0794748217371137,
+              1.1708458885297859
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.41041666666666665,
+            "macro_f1": 0.3613717551798047,
+            "brier": 0.26271507143974304,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.41041666666666665,
+                "macro_f1": 0.3613717551798047,
+                "brier": 0.26271507143974304
+              }
+            },
+            "macro_task_balanced_accuracy": 0.41041666666666665,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.32761837121212123,
+              0.5743546037296037
+            ]
+          }
+        },
+        "test": {
+          "geometry": {
+            "rmse_per_component": [
+              0.22316859676883471,
+              0.22226532867358254,
+              0.21745847497460227,
+              0.17205524530161423,
+              0.22211527105094148,
+              0.21880178519772495,
+              0.2558944678082382,
+              0.24669328351582795,
+              0.23192326251661366,
+              0.2699971029338118,
+              0.20916382402664271,
+              0.2327428444726357
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              10,
+              10,
+              10,
+              10,
+              10,
+              10
+            ],
+            "nrmse": 1.0872388936863635,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.0872388936863635
+              }
+            },
+            "macro_task_nrmse": 1.0872388936863635,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.008004711225694,
+              1.1774741741398118
+            ],
+            "episode_count": 4
+          },
+          "force": {
+            "rmse_per_component": [
+              1.2862242461240745,
+              1.116825231757185,
+              0.9962424672127971,
+              1.2088730965769834,
+              0.9564013841265623,
+              1.2169563894470934,
+              1.1644518412340132,
+              1.0122391235151622,
+              0.9825369310596669,
+              1.0128311463416575,
+              0.9583009355016817,
+              1.0803651872618958
+            ],
+            "valid_per_component": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              13,
+              16,
+              16,
+              16,
+              16,
+              16,
+              13
+            ],
+            "nrmse": 1.0712409216262697,
+            "by_task": {
+              "synthetic": {
+                "n": 16,
+                "nrmse": 1.0712409216262697
+              }
+            },
+            "macro_task_nrmse": 1.0712409216262697,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              1.0152349785450738,
+              1.094205969202835
+            ],
+            "episode_count": 4
+          },
+          "contact": {
+            "balanced_accuracy": 0.5613636363636364,
+            "macro_f1": 0.5465587044534412,
+            "brier": 0.2539478838443756,
+            "by_task": {
+              "synthetic": {
+                "balanced_accuracy": 0.5613636363636364,
+                "macro_f1": 0.5465587044534412,
+                "brier": 0.2539478838443756
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5613636363636364,
+            "episode_count": 4,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.5,
+              0.6924330357142857
+            ]
+          }
+        },
+        "ood_funnel": {
+          "geometry": {
+            "rmse_per_component": [
+              0.2230193406728735,
+              0.17257934514620732,
+              0.2370739981138063,
+              0.2298736388937319,
+              0.2733163074583242,
+              0.2145477892007673,
+              0.26972158594533313,
+              0.23689293165702385,
+              0.22224216270305835,
+              0.270798220864816,
+              0.2650492683756398,
+              0.16820999497356026
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.109896037249602,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.109896037249602
+              }
+            },
+            "macro_task_nrmse": 1.109896037249602,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.9687270847167332,
+              1.111066718861017
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              1.372738046946416,
+              0.9821264835330439,
+              1.0984630945297822,
+              1.2350648006885392,
+              1.1589587675170707,
+              0.9823668326094052,
+              0.6630188463715184,
+              0.8386744676397979,
+              0.9945714949910246,
+              1.374481912744845,
+              0.8519165516284545,
+              1.2429995779342118
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0620560579377412,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "n": 12,
+                "nrmse": 1.0620560579377412
+              }
+            },
+            "macro_task_nrmse": 1.0620560579377412,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.886933162715927,
+              1.1108403730501395
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.625,
+            "macro_f1": 0.48039215686274506,
+            "brier": 0.25256866216659546,
+            "by_task": {
+              "synthetic_ood_funnel": {
+                "balanced_accuracy": 0.625,
+                "macro_f1": 0.48039215686274506,
+                "brier": 0.25256866216659546
+              }
+            },
+            "macro_task_balanced_accuracy": 0.625,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.5912499999999999,
+              0.75
+            ]
+          }
+        },
+        "ood_cups": {
+          "geometry": {
+            "rmse_per_component": [
+              0.1553067201655697,
+              0.19094530773275992,
+              0.2103741646952374,
+              0.278554974059526,
+              0.27115644230252706,
+              0.17673643204169207,
+              0.19000083366324086,
+              0.2215177894293345,
+              0.15021655920822588,
+              0.2752608812028086,
+              0.19333629277721115,
+              0.23259834193994192
+            ],
+            "valid_per_component": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "nrmse": 1.0065321308061563,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0065321308061563
+              }
+            },
+            "macro_task_nrmse": 1.0065321308061563,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.8522916194221756,
+              1.1781896339774873
+            ],
+            "episode_count": 3
+          },
+          "force": {
+            "rmse_per_component": [
+              0.8737022676468521,
+              1.175988399807382,
+              1.0897682738061714,
+              1.373669529722495,
+              0.9852004047111602,
+              1.2076204411245188,
+              0.9235364952318376,
+              1.0006374076091473,
+              1.1286943318160436,
+              0.7903312076935272,
+              1.2665462202394864,
+              0.859408568680312
+            ],
+            "valid_per_component": [
+              12,
+              12,
+              12,
+              12,
+              12,
+              10,
+              12,
+              12,
+              12,
+              12,
+              12,
+              10
+            ],
+            "nrmse": 1.0363289372582956,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "n": 12,
+                "nrmse": 1.0363289372582956
+              }
+            },
+            "macro_task_nrmse": 1.0363289372582956,
+            "macro_task_nrmse_episode_bootstrap_95ci": [
+              0.871657349796464,
+              1.1038872577917034
+            ],
+            "episode_count": 3
+          },
+          "contact": {
+            "balanced_accuracy": 0.5598214285714286,
+            "macro_f1": 0.4666666666666667,
+            "brier": 0.2538215219974518,
+            "by_task": {
+              "synthetic_ood_cups": {
+                "balanced_accuracy": 0.5598214285714286,
+                "macro_f1": 0.4666666666666667,
+                "brier": 0.2538215219974518
+              }
+            },
+            "macro_task_balanced_accuracy": 0.5598214285714286,
+            "episode_count": 3,
+            "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+              0.4285714285714286,
+              0.6841269841269841
+            ]
+          }
+        }
+      }
+    }
+  }
+}

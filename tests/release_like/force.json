@@ -1,0 +1,1 @@
+{"mode": "selection_only", "data_signature": "synthetic-release-fixture", "split_pair_counts": {"train": 100, "val": 20}, "lambda_force": 0.1, "seed": 0, "per_finger": {"splits": {"val": {"geometry": {"macro_task_nrmse": 1.01}, "force": {"macro_task_nrmse": 0.9}, "contact": {"macro_task_balanced_accuracy": 0.9}}}}}

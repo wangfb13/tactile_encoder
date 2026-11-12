@@ -1,0 +1,20 @@
+{
+  "status": "training_in_progress",
+  "project": "/mnt/workspace/umi/tactile_encoder",
+  "source_modified_only_inside_project": true,
+  "cpu_tests_passed": 51,
+  "data_pairs": 25000,
+  "training_single_fingers": 50000,
+  "release": "releases/v1",
+  "screening_complete": 1,
+  "screening_total": 4,
+  "formal_runs_planned": 6,
+  "max_concurrent_jobs": 2,
+  "active_jobs": 2,
+  "active_gpus": 2,
+  "monitor_automation": "automation",
+  "report_when_complete": "reports/final/reviewed_report.html",
+  "controller_requires_dsw_running": true,
+  "scientific_results_complete": false,
+  "test_log_sha256": "24a57689fb74d40552563f3bdbcec9dd3c83b8f3ef019f1cd978c049b445f04b"
+}

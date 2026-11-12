@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "mode": "selection_only",
+  "checkpoint": "runs/cpu_model_validation/reference/encoder.pt",
+  "checkpoint_sha256": "6cbb0a6f4cac94985a22c7bbca4ee573ae448e10ed12e9bf777bf3e29a0bdb5e",
+  "lambda_force": 0.3,
+  "seed": 17,
+  "evaluation_time_utc": "2026-11-11T16:32:37Z",
+  "split_pair_counts": {
+    "train": 32,
+    "val": 8
+  },
+  "encoder_feature_health": {
+    "mean_feature_std": 0.3870321214199066,
+    "near_constant_dimensions": 0,
+    "effective_rank_covariance": 1.9649206399917603,
+    "dimension": 48,
+    "rank_sample_count": 64
+  },
+  "per_finger": {
+    "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_release_smoke/probes/per_finger.pt",
+    "selected_alphas": {
+      "geometry": 1.0,
+      "force": 1.0,
+      "contact": 0.0001
+    },
+    "splits": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.10391348279431802,
+            0.12023948243405812,
+            0.08101935650739663,
+            0.0017483396157453226,
+            0.01724333296589015,
+            0.006258702610504009
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "nrmse": 0.8522291241856456,
+          "by_task": {
+            "green_normal": {
+              "n": 16,
+              "nrmse": 0.8522291241856456
+            }
+          },
+          "macro_task_nrmse": 0.8522291241856456,
+          "episode_count": 1
+        },
+        "force": {
+          "rmse_per_component": [
+            0.9220401809898537,
+            0.3004635210221989,
+            0.44361013303617175,
+            0.2883007994021799,
+            1.6087042883104383,
+            1.9736836694415505
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            16
+          ],
+          "nrmse": 0.9228004289280705,
+          "by_task": {
+            "green_normal": {
+              "n": 16,
+              "nrmse": 0.9228004289280705
+            }
+          },
+          "macro_task_nrmse": 0.9228004289280705,
+          "episode_count": 1
+        },
+        "contact": {
+          "balanced_accuracy": 1.0,
+          "macro_f1": 1.0,
+          "brier": 0.00014978021499700844,
+          "by_task": {
+            "green_normal": {
+              "balanced_accuracy": 1.0,
+              "macro_f1": 1.0,
+              "brier": 0.00014978021499700844
+            }
+          },
+          "macro_task_balanced_accuracy": 1.0,
+          "episode_count": 1
+        }
+      }
+    }
+  },
+  "per_finger_sides": {
+    "left": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.07820381123282667,
+            0.028671817865561642,
+            0.07647998557582798,
+            0.0013826168655849927,
+            0.00395902245478943,
+            0.004550558707867358
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 0.44618882413277494,
+          "by_task": {
+            "green_normal": {
+              "n": 8,
+              "nrmse": 0.44618882413277494
+            }
+          },
+          "macro_task_nrmse": 0.44618882413277494,
+          "episode_count": 1
+        },
+        "force": {
+          "rmse_per_component": [
+            0.7422615817391202,
+            0.3633545422196746,
+            0.5869272392431392,
+            0.3451294422402607,
+            1.7841213573824068,
+            2.2027844104878116
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 1.0040964250947502,
+          "by_task": {
+            "green_normal": {
+              "n": 8,
+              "nrmse": 1.0040964250947502
+            }
+          },
+          "macro_task_nrmse": 1.0040964250947502,
+          "episode_count": 1
+        },
+        "contact": {
+          "balanced_accuracy": 1.0,
+          "macro_f1": 1.0,
+          "brier": 0.0,
+          "by_task": {
+            "green_normal": {
+              "balanced_accuracy": 1.0,
+              "macro_f1": 1.0,
+              "brier": 0.0
+            }
+          },
+          "macro_task_balanced_accuracy": 1.0,
+          "episode_count": 1
+        }
+      }
+    },
+    "right": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.12441940251243158,
+            0.16760964041694487,
+            0.08531755112359764,
+            0.002049817956390911,
+            0.024062235882241573,
+            0.007591781166146648
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 1.0838836737265918,
+          "by_task": {
+            "green_normal": {
+              "n": 8,
+              "nrmse": 1.0838836737265918
+            }
+          },
+          "macro_task_nrmse": 1.0838836737265918,
+          "episode_count": 1
+        },
+        "force": {
+          "rmse_per_component": [
+            1.0720840050143823,
+            0.2202955719687212,
+            0.2215769189250723,
+            0.21707225184306236,
+            1.411655041640395,
+            1.7142330811572308
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 0.8094861428710173,
+          "by_task": {
+            "green_normal": {
+              "n": 8,
+              "nrmse": 0.8094861428710173
+            }
+          },
+          "macro_task_nrmse": 0.8094861428710173,
+          "episode_count": 1
+        },
+        "contact": {
+          "balanced_accuracy": 1.0,
+          "macro_f1": 1.0,
+          "brier": 0.0002995618851855397,
+          "by_task": {
+            "green_normal": {
+              "balanced_accuracy": 1.0,
+              "macro_f1": 1.0,
+              "brier": 0.0002995618851855397
+            }
+          },
+          "macro_task_balanced_accuracy": 1.0,
+          "episode_count": 1
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "Force targets are X5 SDK estimates, not independent physical force ground truth.",
+    "Contact geometry is a fixed DD-derived proxy, not manually verified truth.",
+    "Single/paired representations are evaluated on identical paired timestamps and target sets.",
+    "Episode bootstrap intervals do not treat individual frames as independent.",
+    "Hyperparameters and checkpoint/lambda selection never use final test or OOD."
+  ]
+}

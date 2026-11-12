@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "mode": "selection_only",
+  "checkpoint": "tests/evaluation_fixture/fixture.pt",
+  "checkpoint_sha256": "5ac69320c634e60345dd128e58a17365ae4ed3d64b37e14436a68c08aef3a93e",
+  "lambda_force": 0.0,
+  "seed": 0,
+  "evaluation_time_utc": "2026-11-11T16:29:54Z",
+  "split_pair_counts": {
+    "train": 40,
+    "val": 16
+  },
+  "encoder_feature_health": {
+    "mean_feature_std": 0.05927358940243721,
+    "near_constant_dimensions": 0,
+    "effective_rank_covariance": 19.075353622436523,
+    "dimension": 48,
+    "rank_sample_count": 80
+  },
+  "per_finger": {
+    "probe_file": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/selection_eval/probes/per_finger.pt",
+    "selected_alphas": {
+      "geometry": 1.0,
+      "force": 1.0,
+      "contact": 0.01
+    },
+    "splits": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.23090386131497675,
+            0.23003505410864217,
+            0.23641486979803342,
+            0.2647618500024034,
+            0.250741151407831,
+            0.25845973655020066
+          ],
+          "valid_per_component": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ],
+          "nrmse": 1.153859479577759,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.153859479577759
+            }
+          },
+          "macro_task_nrmse": 1.153859479577759,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0447038954418129,
+            1.1952497815518102
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.187498494197493,
+            1.3692734418544055,
+            1.3042342260897413,
+            1.0537672761381052,
+            0.9635293014695216,
+            1.1774693689843205
+          ],
+          "valid_per_component": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            26
+          ],
+          "nrmse": 1.1490145770867664,
+          "by_task": {
+            "synthetic": {
+              "n": 32,
+              "nrmse": 1.1490145770867664
+            }
+          },
+          "macro_task_nrmse": 1.1490145770867664,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0737413385834595,
+            1.2255804153360363
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.5436507936507937,
+          "macro_f1": 0.530791788856305,
+          "brier": 0.3652905225753784,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.5436507936507937,
+              "macro_f1": 0.530791788856305,
+              "brier": 0.3652905225753784
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5436507936507937,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.4680610452349583,
+            0.594313725490196
+          ]
+        }
+      }
+    }
+  },
+  "per_finger_sides": {
+    "left": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.23419668248909034,
+            0.26957166064745736,
+            0.2321051675729103,
+            0.23096642666632566,
+            0.262700346717671,
+            0.2593781873208425
+          ],
+          "valid_per_component": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "nrmse": 1.1709106459778245,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1709106459778245
+            }
+          },
+          "macro_task_nrmse": 1.1709106459778245,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.033477269994972,
+            1.2524955168991165
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.1442902086597269,
+            1.389074082213647,
+            1.273391254732093,
+            1.3157110444335633,
+            1.0105062753066316,
+            1.0258637372936905
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.164079919345322,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.164079919345322
+            }
+          },
+          "macro_task_nrmse": 1.164079919345322,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0117761005380472,
+            1.3095777629472856
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.5,
+          "macro_f1": 0.5,
+          "brier": 0.3319489657878876,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.5,
+              "macro_f1": 0.5,
+              "brier": 0.3319489657878876
+            }
+          },
+          "macro_task_balanced_accuracy": 0.5,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.375,
+            0.625
+          ]
+        }
+      }
+    },
+    "right": {
+      "val": {
+        "geometry": {
+          "rmse_per_component": [
+            0.22823540876782117,
+            0.1926497645342269,
+            0.23980687258641892,
+            0.2889662917585277,
+            0.2407464377396206,
+            0.25772258462154257
+          ],
+          "valid_per_component": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "nrmse": 1.1332894965678009,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1332894965678009
+            }
+          },
+          "macro_task_nrmse": 1.1332894965678009,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.010551690997019,
+            1.1537502732536822
+          ],
+          "episode_count": 4
+        },
+        "force": {
+          "rmse_per_component": [
+            1.229188864987031,
+            1.3491821054364996,
+            1.3343644277971252,
+            0.6998252795354761,
+            0.9141413336773023,
+            1.311667601055257
+          ],
+          "valid_per_component": [
+            16,
+            16,
+            16,
+            16,
+            16,
+            13
+          ],
+          "nrmse": 1.1152862687841527,
+          "by_task": {
+            "synthetic": {
+              "n": 16,
+              "nrmse": 1.1152862687841527
+            }
+          },
+          "macro_task_nrmse": 1.1152862687841527,
+          "macro_task_nrmse_episode_bootstrap_95ci": [
+            1.0310853752762974,
+            1.1821931037164088
+          ],
+          "episode_count": 4
+        },
+        "contact": {
+          "balanced_accuracy": 0.6166666666666667,
+          "macro_f1": 0.5607843137254902,
+          "brier": 0.3986320495605469,
+          "by_task": {
+            "synthetic": {
+              "balanced_accuracy": 0.6166666666666667,
+              "macro_f1": 0.5607843137254902,
+              "brier": 0.3986320495605469
+            }
+          },
+          "macro_task_balanced_accuracy": 0.6166666666666667,
+          "episode_count": 4,
+          "macro_task_balanced_accuracy_episode_bootstrap_95ci": [
+            0.43740079365079365,
+            0.7229545454545455
+          ]
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "Force targets are X5 SDK estimates, not independent physical force ground truth.",
+    "Contact geometry is a fixed DD-derived proxy, not manually verified truth.",
+    "Single/paired representations are evaluated on identical paired timestamps and target sets.",
+    "Episode bootstrap intervals do not treat individual frames as independent.",
+    "Hyperparameters and checkpoint/lambda selection never use final test or OOD."
+  ]
+}

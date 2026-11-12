@@ -1,0 +1,80 @@
+{
+  "created_at_utc": "2026-11-11T16:39:58.271275+00:00",
+  "project": "/mnt/workspace/umi/tactile_encoder",
+  "code_release": "releases/v1",
+  "image": "daimon-acr-registry-vpc.cn-wulanchabu.cr.aliyuncs.com/daimon/bin_image:bin",
+  "resource_id": "quota1boxu6idx3j",
+  "max_active_jobs": 2,
+  "max_active_gpus": 2,
+  "gpu_per_job": 1,
+  "screening": {
+    "epochs": 20,
+    "seeds": [
+      0
+    ],
+    "lambda_force": [
+      0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "selection_data": [
+      "train",
+      "val"
+    ],
+    "geometry_relative_tolerance": 0.05,
+    "contact_absolute_tolerance": 0.02,
+    "force_relative_improvement": 0.01
+  },
+  "formal": {
+    "epochs": 100,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "groups": [
+      "mae",
+      "mae_plus_selected_force"
+    ],
+    "final_data": [
+      "test",
+      "ood_funnel",
+      "ood_cups"
+    ]
+  },
+  "training": {
+    "micro_batch": 64,
+    "accumulation": 4,
+    "effective_batch": 256,
+    "lr": 0.00015,
+    "warmup_epochs": 5,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.05,
+    "bf16": true,
+    "mask_ratio": 0.75
+  },
+  "representation": {
+    "single": "768-d mean pooled patch tokens, no CLS",
+    "paired_concat": "1536-d",
+    "paired_concat_difference": "2304-d; same encoder weights; no temporal input",
+    "linear_difference": "analytically equivalent, not new information",
+    "additional_mlp": "matched parameter budget"
+  },
+  "data_quota_pairs": {
+    "green_normal": 2000,
+    "vase": 6000,
+    "wire": 4000,
+    "pinggai": 2000,
+    "green_guo": 2000,
+    "cable": 3000,
+    "wipe": 6000
+  },
+  "scope": "SDK force auxiliary regression only, no contrastive loss; DD geometry probes are proxies",
+  "output": "reports/final",
+  "temporary_storage": "Only per-container /tmp for multiprocessing sockets; durable code/data/results remain under project"
+}

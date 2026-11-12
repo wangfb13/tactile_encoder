@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "selected_lambda": 0.1,
+  "accepted_as_improvement": true,
+  "recommended_lambda": 0.1,
+  "reason": "Smallest weight meeting predeclared validation geometry/contact tolerances and force improvement.",
+  "selection_split": "val",
+  "test_used": false,
+  "thresholds": {
+    "geometry_relative_tolerance": 0.05,
+    "contact_absolute_tolerance": 0.02,
+    "force_relative_improvement": 0.01
+  },
+  "validation_scores": [
+    {
+      "lambda_force": 0.0,
+      "geometry": 1.0,
+      "force": 1.0,
+      "contact": 0.9,
+      "geometry_ok": true,
+      "contact_ok": true,
+      "force_improved": false,
+      "eligible": false
+    },
+    {
+      "lambda_force": 0.1,
+      "geometry": 1.01,
+      "force": 0.9,
+      "contact": 0.9,
+      "geometry_ok": true,
+      "contact_ok": true,
+      "force_improved": true,
+      "eligible": true
+    }
+  ],
+  "runs": {
+    "0.0": [
+      {
+        "seed": 0,
+        "file": "tests/release_like/baseline.json",
+        "geometry": 1.0,
+        "force": 1.0,
+        "contact": 0.9
+      }
+    ],
+    "0.1": [
+      {
+        "seed": 0,
+        "file": "tests/release_like/force.json",
+        "geometry": 1.01,
+        "force": 0.9,
+        "contact": 0.9
+      }
+    ]
+  },
+  "screening_uncertainty": "Screening is not final evidence; the formal comparison uses three training seeds.",
+  "created_at_utc": "2026-11-11T16:34:39.025334+00:00",
+  "input_sha256": {
+    "tests/release_like/baseline.json": "8a86bd53139570d8078f2a5b6bfcaf33553f9093e3ee380c3b301aa5a13cb4e6",
+    "tests/release_like/force.json": "b28df843f43346babec01816df38fceffb75aaedbab464fdac9c8c0fcb2699e1"
+  }
+}

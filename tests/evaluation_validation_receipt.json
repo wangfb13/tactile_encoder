@@ -1,0 +1,13 @@
+{
+  "unit_tests_passed": 9,
+  "real_dd_selection_cli": "tests/evaluation_release_smoke/evaluation.json",
+  "synthetic_final_cli": "tests/evaluation_fixture/final_eval/evaluation.json",
+  "release_report_cli": "tests/evaluation_fixture/release_report/report.html",
+  "note": "All reports here are validation fixtures, not trained experiment results.",
+  "source_sha256": {
+    "evaluate.py": "0d2adfb6a42f14a45759e9aea86dcf3f48ded83d546bfba8a3191ca685aa222a",
+    "scripts/select_lambda.py": "9d4236d894ba7c4328ef041b92f9b6bad85e9711fe3cf4d4c5fa403cfd9d6410",
+    "scripts/build_report.py": "d0066bd2713d90ebe345552bcc2ce1aeaeb7069712c92a706afea0f8cb5d88be",
+    "tests/test_evaluation.py": "7403f2a50dc603fadb3b586556256faa30e45f1040b00aaecbb41052836ad4c8"
+  }
+}

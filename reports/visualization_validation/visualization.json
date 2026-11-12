@@ -1,0 +1,41 @@
+{
+  "split": "val",
+  "samples": 2,
+  "seed": 42,
+  "mask_ratio_before": 0.75,
+  "mask_ratio_after": 0.75,
+  "force_head_used": false,
+  "training_performed": false,
+  "normalization_source": "checkpoint training statistics",
+  "deformation_storage_offsets_removed": [
+    30000.0,
+    30000.0
+  ],
+  "reconstruction": "visible original pixels plus predictions only in masked patches",
+  "images": [
+    {
+      "index": 0,
+      "pair_index": 0,
+      "finger": 0,
+      "file": "val_00_index_0000000.png",
+      "masked_pixel_mae_by_channel": [
+        2.9319021701812744,
+        5.7625651359558105,
+        5.325736045837402
+      ]
+    },
+    {
+      "index": 6249,
+      "pair_index": 3124,
+      "finger": 1,
+      "file": "val_01_index_0006249.png",
+      "masked_pixel_mae_by_channel": [
+        2.5170578956604004,
+        0.35855162143707275,
+        0.4623270034790039
+      ]
+    }
+  ],
+  "checkpoint": "/mnt/workspace/umi/tactile_encoder/runs/screen_l000_s0/encoder.pt",
+  "checkpoint_sha256": "3e49f892e9b930f7ffc902147cbe2955385ca0546004967bf11d3f9c15a52fad"
+}

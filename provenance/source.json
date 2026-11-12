@@ -1,0 +1,38 @@
+{
+  "source": "/mnt/shared_data/zxd/260611_tac_encoder_vit-b-16/vit-b-tac2_s",
+  "copied_at_utc": "2026-11-11T16:18:46.612839+00:00",
+  "files": [
+    {
+      "file": "config.py",
+      "sha256": "02a7a6cff0a40bf72fb2eb38a1d01af0a3a4dd76b1112c7b6ee86886df33f7da"
+    },
+    {
+      "file": "dataset.py",
+      "sha256": "8a6aa9a21d682df1d4b4447573f2359afd68899b3214b11bc62e9cd4cf237f99"
+    },
+    {
+      "file": "engine.py",
+      "sha256": "69f33a68f4b4902bc5271a1d08150f1b29da2cf3a79ab9502de623ebf950a793"
+    },
+    {
+      "file": "misc.py",
+      "sha256": "e7c02c9d36d5a955188e2b2ba7e182a7f6005ad5bcd4812941d677ff5005b091"
+    },
+    {
+      "file": "model.py",
+      "sha256": "c6ddea42bf963604bcf7eda0a4964732528642a62799bb60c4c18cbded66c281"
+    },
+    {
+      "file": "test_vis.py",
+      "sha256": "eb8729037dce2cfb3a8d55567ff60539f8721eca687e59227becce71b198b642"
+    },
+    {
+      "file": "train.py",
+      "sha256": "13bfd8e78fce31b5135b3da9f71e76516c947e7c96fffb5e7d4e34e785299d20"
+    },
+    {
+      "file": "train.sh",
+      "sha256": "91aa085b7dccb9868da2c22fca1f4cb879cc7d1c24a310873ee43d1fe1628ba9"
+    }
+  ]
+}

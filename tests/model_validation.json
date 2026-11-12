@@ -1,0 +1,27 @@
+{
+  "base_real_data_forward": true,
+  "data_root": "data/gpu_smoke",
+  "feature_shape": [
+    2,
+    768
+  ],
+  "input_shape": [
+    2,
+    3,
+    192,
+    256
+  ],
+  "mae_loss": 1.84287691116333,
+  "force_loss": 0.3406597077846527,
+  "valid_force_components": 12,
+  "loaded_encoder_tensors": 150,
+  "encoder_parameter_coverage": 1.0,
+  "force_head_init_std": 0.01,
+  "files_sha256": {
+    "model.py": "cbd1f87f4c908e70d8f73189c66b16c23e56e63c80dc8fcee9264b78d0fdcbc4",
+    "engine.py": "8ca7cb035d3a2e7f588b8f014b9d316fa03972a8824755f68f3214c6f4171e22",
+    "config.py": "016fbe2ded1808a77d70c2525941c87d02ceeefc7058b23477e224ecc530b727",
+    "train.py": "ef1805ad2b8cc4ac948fb5accfec5434e24fe151de22e336ee7a7baf7e4879f1",
+    "tests/test_model.py": "c4a1e18d7396d34371b9bfa49fa18cd7257c55a628314f9d44fe6b701cb062e3"
+  }
+}

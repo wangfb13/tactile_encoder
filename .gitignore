@@ -1,0 +1,24 @@
+# Datasets, model weights, and generated training outputs
+/data/
+/runs/
+/weights/
+
+# Local cloud dependencies and runtime state
+/cloud/deps/
+/cloud/jobs/
+/cloud/*.lock
+/cloud/*.log
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Logs and local secrets
+*.log
+.env
+.env.*
+*.pem
+*.key

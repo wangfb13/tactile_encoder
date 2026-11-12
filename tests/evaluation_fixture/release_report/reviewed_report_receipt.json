@@ -1,0 +1,27 @@
+{
+  "rendered_at_Asia_Shanghai": "2026-11-12T01:00:32+08:00",
+  "complete_evidence": false,
+  "input_sha256": {
+    "result_summary.json": "7421da8fe494a78809d11ce47df5ede34e63336a5986700819599e0957e7a600",
+    "report.md": "25c160f2a8cea6f16788eef59c78cebaf925fc3d6b8b45b946c116e135d68d77",
+    "test_comparison.png": "eaf6f483d701677c05e9c7d9c1e49a7189f4ae04b232f2bfb9d32038502b0edb"
+  },
+  "output_sha256": "b7490bb88553c9c39c827ba31b0b3dcd7bc9f7635b6242d542ce20a474895438",
+  "source_count": 1,
+  "completion_checks": {
+    "complete": false,
+    "summary_status": "partial",
+    "three_matched_seeds": false,
+    "six_completed_jobs_and_evaluations": false,
+    "identical_data_signature": true,
+    "prepared_data_qa_and_counts": false,
+    "validation_only_weight_selection": false,
+    "seed_sets": {
+      "0.0": [
+        0
+      ]
+    }
+  },
+  "render_script_sha256": "eba52f2f42a0aad472485e7fc67e52b64bfe7801e6531b7546ba4613db78ddec",
+  "output": "/mnt/workspace/umi/tactile_encoder/tests/evaluation_fixture/release_report/reviewed_report.html"
+}

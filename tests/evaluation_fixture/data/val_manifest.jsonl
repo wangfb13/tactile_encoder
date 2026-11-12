@@ -1,0 +1,16 @@
+{"dataset": "synthetic", "episode": "val0", "episode_fingerprint": "val0", "hand": "right", "frame_index": 0, "timestamp": 0.0}
+{"dataset": "synthetic", "episode": "val0", "episode_fingerprint": "val0", "hand": "right", "frame_index": 1, "timestamp": 0.03333333333333333}
+{"dataset": "synthetic", "episode": "val0", "episode_fingerprint": "val0", "hand": "right", "frame_index": 2, "timestamp": 0.06666666666666667}
+{"dataset": "synthetic", "episode": "val0", "episode_fingerprint": "val0", "hand": "right", "frame_index": 3, "timestamp": 0.1}
+{"dataset": "synthetic", "episode": "val1", "episode_fingerprint": "val1", "hand": "right", "frame_index": 4, "timestamp": 0.13333333333333333}
+{"dataset": "synthetic", "episode": "val1", "episode_fingerprint": "val1", "hand": "right", "frame_index": 5, "timestamp": 0.16666666666666666}
+{"dataset": "synthetic", "episode": "val1", "episode_fingerprint": "val1", "hand": "right", "frame_index": 6, "timestamp": 0.2}
+{"dataset": "synthetic", "episode": "val1", "episode_fingerprint": "val1", "hand": "right", "frame_index": 7, "timestamp": 0.23333333333333334}
+{"dataset": "synthetic", "episode": "val2", "episode_fingerprint": "val2", "hand": "right", "frame_index": 8, "timestamp": 0.26666666666666666}
+{"dataset": "synthetic", "episode": "val2", "episode_fingerprint": "val2", "hand": "right", "frame_index": 9, "timestamp": 0.3}
+{"dataset": "synthetic", "episode": "val2", "episode_fingerprint": "val2", "hand": "right", "frame_index": 10, "timestamp": 0.3333333333333333}
+{"dataset": "synthetic", "episode": "val2", "episode_fingerprint": "val2", "hand": "right", "frame_index": 11, "timestamp": 0.36666666666666664}
+{"dataset": "synthetic", "episode": "val3", "episode_fingerprint": "val3", "hand": "right", "frame_index": 12, "timestamp": 0.4}
+{"dataset": "synthetic", "episode": "val3", "episode_fingerprint": "val3", "hand": "right", "frame_index": 13, "timestamp": 0.43333333333333335}
+{"dataset": "synthetic", "episode": "val3", "episode_fingerprint": "val3", "hand": "right", "frame_index": 14, "timestamp": 0.4666666666666667}
+{"dataset": "synthetic", "episode": "val3", "episode_fingerprint": "val3", "hand": "right", "frame_index": 15, "timestamp": 0.5}

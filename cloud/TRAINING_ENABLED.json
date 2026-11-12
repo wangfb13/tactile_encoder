@@ -1,0 +1,10 @@
+{
+  "enabled_at": "2026-11-11T16:40:37.437039+00:00",
+  "scope": "predeclared 4 screening and 6 final experiments",
+  "max_concurrent_jobs": 2,
+  "integration_jobs": [
+    "dlcetqn0ryhdpk3n",
+    "dlcf3q8ej0qesl24"
+  ],
+  "original_source_unchanged": true
+}

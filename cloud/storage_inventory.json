@@ -1,0 +1,297 @@
+{
+  "shared": {
+    "DatasetId": "d-qz3z1xut6p0e2rhx5e",
+    "Uri": "nas://2988db482cf.cn-wulanchabu/user/shared/",
+    "DataSourceType": "NAS",
+    "Options": "{\"mountPath\":\"/mnt/data/\"}"
+  },
+  "matches": [
+    {
+      "DatasetId": "d-j320s76yv5brqkf3ef",
+      "Name": "weiming_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/weiming/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-qftheon8e6qojc8xnd",
+      "Name": "xidong_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/xidong/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-1lfem3fuknxvvuo158",
+      "Name": "yipan_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/yipan/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-lu3fmaylj6r0n6hkms",
+      "Name": "yichi_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/yichi/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-qz3z1xut6p0e2rhx5e",
+      "Name": "shared",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/shared/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-iomirfbnv4a2t1nnk4",
+      "Name": "terry_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/zenan/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-47wrjxciplv7anuh82",
+      "Name": "sunny_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/sunyu/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-t326od0x33qbb18o1q",
+      "Name": "kanghui_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/kanghui/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-jdjcchoslu1qzmj5nr",
+      "Name": "zfc_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/zfc/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-5hxp472rdukk0u1ctr",
+      "Name": "chunpeng_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/chunpeng/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-2xqd4jf75uojm2siiw",
+      "Name": "jiaxin_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/jiaxin/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-66e441y1u7r337gjep",
+      "Name": "lunar_cpfs",
+      "Uri": "bmcpfs://bmcpfs-29000tpruhl50wr2npkaa.cn-wulanchabu/user/lunar_cpfs/",
+      "DataSourceType": "BMCPFS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-gs9qau363vkxb3nfe5",
+      "Name": "tacumi_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/tacumi_data/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-kdjcxpjk9eltms36tk",
+      "Name": "tacexo_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/tacexo_data/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-f87vrxjzln65gq4lu9",
+      "Name": "zfc_cpfs",
+      "Uri": "bmcpfs://bmcpfs-29000tpruhl50wr2npkaa.cn-wulanchabu/user/zfc_cpfs/",
+      "DataSourceType": "BMCPFS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-iu3dunhkuejrz0w4jo",
+      "Name": "wfb_data",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/ziyan/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-x0mr7iqp8quta330q7",
+      "Name": "sparky_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/sparky_data/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-i5xwky763gi31qrds0",
+      "Name": "benchmark_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/benchmark_data/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-panjhcihzrmzyq6bw5",
+      "Name": "yinhong_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/yinhong/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-nrtful4r9o9jtsc6nj",
+      "Name": "jiaqi_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/jiaqi/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-gacgfqs81bhyv6ovti",
+      "Name": "xiyin_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/xiyin/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-s3262omikvcrqzrzug",
+      "Name": "zibin_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/zibin/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-4zk0nx091pylxzosie",
+      "Name": "kaiqi_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/kaiqi/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-nzeuzyvbtfhys6wywy",
+      "Name": "jingxiang_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/jingxiang/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-xvgug4hc0pu5l0f3lm",
+      "Name": "xuewei_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/xuewei/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-ob9ecfqr7g8l8optwg",
+      "Name": "lishan_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/lishan/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-e9fm3calibv8rfgc3u",
+      "Name": "kunpeng_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/kunpeng/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-5rt586yjc2h3b5rrvm",
+      "Name": "yaqi_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/yaqi/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-o0mm09obhu5age2dm0",
+      "Name": "zikai_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/zikai/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-yc0wno3dyqkrtvusyp",
+      "Name": "jiawen_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/jiawen/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-m322niycd8bjlq785j",
+      "Name": "xiaojian_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/xiaojian/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-wg9ztoukcsct2233vf",
+      "Name": "zhengyu_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/zhengyu/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-v7gsywq6ci5lg9iqpt",
+      "Name": "huanzhang_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/huanzhang/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-nb3x65fvry6s1rzpht",
+      "Name": "vlm3d-dlc-validation-20261024-input",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/jiaxin/vlm3d-dlc-validation-20261024/home/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-v1uh55rwfsx3gbmgxc",
+      "Name": "vlm3d-dlc-validation-20261024-output",
+      "Uri": "nas://2988db482cf.cn-wulanchabu/user/jiaxin/vlm3d-dlc-validation-20261024/results/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-jlqn8o4wv5c4rik04s",
+      "Name": "yingwei_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/yingwei/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-g1oriveqzaia4c5zc2",
+      "Name": "foundation_model",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/foundation_model/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-d68rniwnj9bqnmxo2u",
+      "Name": "yaojiaqi_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/yaojiaqi/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-nriieguz6iduersp1i",
+      "Name": "jarvisMen_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/jarvisMen/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-s7baga5dfi0zuteri4",
+      "Name": "dongliangliang_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/dongliangliang/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    },
+    {
+      "DatasetId": "d-q518equlcxhl9m8jw1",
+      "Name": "wangzhiyuan_data",
+      "Uri": "nas://2988db482cf-lcv32.cn-wulanchabu.nas.aliyuncs.com/user/wangzhiyuan/",
+      "DataSourceType": "NAS",
+      "MountPath": null
+    }
+  ]
+}

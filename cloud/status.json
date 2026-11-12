@@ -1,0 +1,322 @@
+{
+  "updated_at": "2026-11-11T23:49:27.343082+00:00",
+  "jobs": [
+    {
+      "JobId": "dlchvhyize6lnzb0",
+      "DisplayName": "wfb_tac_20261112_mountcheck",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlchvhyize6lnzb0 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:24:33Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:25:36Z",
+      "logical": "mountcheck",
+      "gpu": 0,
+      "pods": [
+        {
+          "PodId": "dlchvhyize6lnzb0-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:25:30Z",
+          "GmtFinishTime": "2026-11-11T16:25:34Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc1is1czvorzxq8",
+      "DisplayName": "wfb_tac_20261112_smoke_mae",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc1is1czvorzxq8 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:31:02Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:31:58Z",
+      "logical": "smoke_mae",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc1is1czvorzxq8-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:31:38Z",
+          "GmtFinishTime": "2026-11-11T16:31:57Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc1j20ydnw33698",
+      "DisplayName": "wfb_tac_20261112_smoke_force",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc1j20ydnw33698 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:31:02Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:32:04Z",
+      "logical": "smoke_force",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc1j20ydnw33698-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:31:38Z",
+          "GmtFinishTime": "2026-11-11T16:32:03Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlcetqn0ryhdpk3n",
+      "DisplayName": "wfb_tac_20261112_integration_mae",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlcetqn0ryhdpk3n is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:37:10Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:38:16Z",
+      "logical": "integration_mae",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlcetqn0ryhdpk3n-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:37:46Z",
+          "GmtFinishTime": "2026-11-11T16:38:15Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlcf3q8ej0qesl24",
+      "DisplayName": "wfb_tac_20261112_integration_force",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlcf3q8ej0qesl24 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:37:11Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:38:22Z",
+      "logical": "integration_force",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlcf3q8ej0qesl24-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:37:47Z",
+          "GmtFinishTime": "2026-11-11T16:38:21Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc1sb4lnx4lv0rh",
+      "DisplayName": "wfb_tac_20261112_screen_l000_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc1sb4lnx4lv0rh is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:40:39Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T16:52:40Z",
+      "logical": "screen_l000_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc1sb4lnx4lv0rh-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:41:13Z",
+          "GmtFinishTime": "2026-11-11T16:52:39Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc22apzfy6zf5vy",
+      "DisplayName": "wfb_tac_20261112_screen_l010_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc22apzfy6zf5vy is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:40:40Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T17:12:14Z",
+      "logical": "screen_l010_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc22apzfy6zf5vy-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:41:11Z",
+          "GmtFinishTime": "2026-11-11T17:12:13Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc04hs0bxfwn32x",
+      "DisplayName": "wfb_tac_20261112_screen_l030_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc04hs0bxfwn32x is successfully completed.",
+      "GmtCreateTime": "2026-11-11T16:53:21Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T17:24:42Z",
+      "logical": "screen_l030_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc04hs0bxfwn32x-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T16:53:54Z",
+          "GmtFinishTime": "2026-11-11T17:24:41Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc192tma3u3t2l7",
+      "DisplayName": "wfb_tac_20261112_screen_l050_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc192tma3u3t2l7 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T17:13:07Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T17:44:40Z",
+      "logical": "screen_l050_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc192tma3u3t2l7-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T17:13:41Z",
+          "GmtFinishTime": "2026-11-11T17:44:38Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlcj070ujgc7r9to",
+      "DisplayName": "wfb_tac_20261112_final_mae_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlcj070ujgc7r9to is successfully completed.",
+      "GmtCreateTime": "2026-11-11T17:45:41Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T18:40:19Z",
+      "logical": "final_mae_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlcj070ujgc7r9to-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T17:46:16Z",
+          "GmtFinishTime": "2026-11-11T18:40:17Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlcjk67m3ort7qdx",
+      "DisplayName": "wfb_tac_20261112_final_force_s0",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlcjk67m3ort7qdx is successfully completed.",
+      "GmtCreateTime": "2026-11-11T17:45:43Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T20:18:31Z",
+      "logical": "final_force_s0",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlcjk67m3ort7qdx-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T17:46:17Z",
+          "GmtFinishTime": "2026-11-11T20:18:29Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlcbj08wb8arnp6r",
+      "DisplayName": "wfb_tac_20261112_final_mae_s1",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlcbj08wb8arnp6r is successfully completed.",
+      "GmtCreateTime": "2026-11-11T18:40:42Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T19:35:14Z",
+      "logical": "final_mae_s1",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlcbj08wb8arnp6r-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T18:41:15Z",
+          "GmtFinishTime": "2026-11-11T19:35:12Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc4vs93f8g3at05",
+      "DisplayName": "wfb_tac_20261112_final_force_s1",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc4vs93f8g3at05 is successfully completed.",
+      "GmtCreateTime": "2026-11-11T19:35:46Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T22:08:44Z",
+      "logical": "final_force_s1",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc4vs93f8g3at05-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T19:36:23Z",
+          "GmtFinishTime": "2026-11-11T22:08:42Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc9vyznvq5tmldi",
+      "DisplayName": "wfb_tac_20261112_final_mae_s2",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc9vyznvq5tmldi is successfully completed.",
+      "GmtCreateTime": "2026-11-11T20:18:44Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T21:13:11Z",
+      "logical": "final_mae_s2",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc9vyznvq5tmldi-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T20:19:17Z",
+          "GmtFinishTime": "2026-11-11T21:13:09Z"
+        }
+      ]
+    },
+    {
+      "JobId": "dlc6amj2jjcws3xr",
+      "DisplayName": "wfb_tac_20261112_final_force_s2",
+      "Status": "Succeeded",
+      "ReasonCode": "JobSucceeded",
+      "ReasonMessage": "PyTorchJob dlc6amj2jjcws3xr is successfully completed.",
+      "GmtCreateTime": "2026-11-11T21:14:00Z",
+      "GmtStartTime": null,
+      "GmtFinishTime": "2026-11-11T23:47:27Z",
+      "logical": "final_force_s2",
+      "gpu": 1,
+      "pods": [
+        {
+          "PodId": "dlc6amj2jjcws3xr-master-0",
+          "Status": "Succeeded",
+          "SubStatus": "Succeeded",
+          "GmtStartTime": "2026-11-11T21:14:36Z",
+          "GmtFinishTime": "2026-11-11T23:47:25Z"
+        }
+      ]
+    }
+  ],
+  "active_jobs": 0,
+  "active_gpus": 0
+}

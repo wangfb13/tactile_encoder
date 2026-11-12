@@ -1,0 +1,10 @@
+{
+  "files": {
+    "model.py": "cbd1f87f4c908e70d8f73189c66b16c23e56e63c80dc8fcee9264b78d0fdcbc4",
+    "train.py": "ef1805ad2b8cc4ac948fb5accfec5434e24fe151de22e336ee7a7baf7e4879f1",
+    "engine.py": "8ca7cb035d3a2e7f588b8f014b9d316fa03972a8824755f68f3214c6f4171e22",
+    "config.py": "016fbe2ded1808a77d70c2525941c87d02ceeefc7058b23477e224ecc530b727",
+    "dataset.py": "a649d9334074987b9c74ba911e4a59d9ba1de170552b5ea84788d7f8c50ba603"
+  },
+  "scope": "GPU smoke only; CPU model/data tests already passed"
+}

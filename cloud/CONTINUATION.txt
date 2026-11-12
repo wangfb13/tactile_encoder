@@ -1,0 +1,43 @@
+Task: complete the user-authorized tactile encoder experiment and deliver a truthful final report.
+All persistent implementation, generated data and results belong in /mnt/workspace/umi/tactile_encoder on v1_analysis. Original encoder source /mnt/shared_data/zxd/260611_tac_encoder_vit-b-16/vit-b-tac2_s and original OSS datasets are read-only. Source provenance snapshot exists and original hashes were verified unchanged before launch.
+
+Access:
+ssh -o ClearAllForwardings=yes -o BatchMode=yes v1_analysis
+Controller Python: /root/miniconda3/envs/lerobot_v0.5.1/bin/python
+DLC runtime Python: /root/miniconda3/envs/lerobot051/bin/python
+Image: daimon-acr-registry-vpc.cn-wulanchabu.cr.aliyuncs.com/daimon/bin_image:bin
+H20 quota: quota1boxu6idx3j; workspace218916; regioncn-wulanchabu.
+Credential provider is the existing DSW CredentialsURI profile. control.py loads it without printing/copying credentials. Never put credentials in job commands, reports, shared files or logs. No permission or identity changes are authorized.
+
+Status and control:
+cloud/pipeline_state.json, cloud/status.json, cloud/owned_jobs.json, cloud/daemon.json, cloud/pipeline.log.
+python cloud/control.py status queries all task-owned job statuses. Use --logs only when diagnosing an owned job; ordinary logs do not contain credentials, but do not print raw SDK exceptions.
+python cloud/launch.py starts/resumes the controller if it is not already running. It is detached from SSH. The DSW instance must remain running for automatic submission of subsequent jobs; submitted DLC jobs themselves do not depend on DSW being alive.
+The controller checks every60seconds. Local-thread heartbeat checks every20minutes, automationId=automation. It must remain quiet on routine unchanged progress. A desktop heartbeat requires the local app/computer to be available; the remote controller is independent of the desktop app.
+Maximum two nonterminal task jobs and two requested GPUs total. Queuing, Preparing, Running and Stopping all count. Never touch other projects' jobs. Do not delete ledgers/pending records or blindly repeat CreateJob after an uncertain response. The submission and status-reconciliation paths share a lock.
+
+Experiment configuration:
+configs/campaign.json, frozen releases/v1/VERIFIED.json, cloud/TRAINING_ENABLED.json.
+Four screening runs: screen_l000_s0, screen_l010_s0, screen_l030_s0, screen_l050_s0;20epochs each;seed0;lambda0,.1,.3,.5. Selection reads only train/val. Geometry nRMSE tolerance5%, contact balanced-accuracy tolerance2pp, SDK force relative improvement1%. If no positive candidate qualifies, select a positive candidate only for the planned formal comparison and keep MAE as current recommendation; do not claim improvement.
+Then formal final_mae_s0/final_force_s0 through seeds1,2;100epochs;identical data/init/seeds. Batch64 accumulation4 effective256, BF16, AdamW1.5e-4,warmup5,wd.05. Old tactile checkpoint is NOT initialization; original CLIP visual encoder loaded150/150parameter tensors.
+Encoder input: single-finger3-channel DD192x256,patch16,192patches;noflip;global training-only normalization;no per-patch target normalization;mean pool complete patch tokens excludingCLS,768dims.
+MAE masked75%;auxiliary SDK6D SmoothL1 reads a second full unmasked view through the SAME encoder. Projector768->256->128,head128->6,small head std.01;downstream uses pre-projection768. No contrastive learning. Force gradient is not detached.
+Frozen evaluation: own-finger geometry/contact/force probes; common paired-target singleL,singleR,concat,concat+diff. The linear concat+diff solution is analytically equivalent to concat; an additional parameter-matched nonlinearMLP tests the explicit difference. Never report the difference as new information. Final test/OOD must not affect lambda or probe regularization.
+Data: 25k same-hand paired timestamps=50k singlefinger images. Task pair quotas normal2000,vase6000,wire4000,pinggai2000,guo2000,cable3000,wipe6000. Val/test3125pairs each;OODfunnel/cups2000each. Episode-disjoint,exact source fingerprint check;pen excluded due malformed deformation export. All selected SDK label components valid;source sentinel9930 verified. Train empty-finger fraction16.282%.
+prepared/normalization.json,integrity.json,READY.json,QA_READY.json and data/DATA_QA_APPROVED.json freeze data. Geometry proxy threshold30,8-connected components min12pixels estimated only from train backgrounds;train-onlyfigure reviewed. Original device source clocks are absent; only DDvideoPTS/state recorded alignment was checked(~0.000335s maximum sampled), not original sensor freshness.
+
+Checks:
+27 initial CPU tests passed, plus actual full-baseGPU MAE/force forward/backward20steps and actual train->checkpoint->frozen-evaluation integration succeeded. Cloud jobs integration_mae=dlcetqn0ryhdpk3n,integration_force=dlcf3q8ej0qesl24. Early smoke used NAS TMPDIR and had multiprocessing cleanup warnings; fixed to container-local/tmp before integration, then zero cleanup errors. All durable artifacts remain in project. The tiny and smoke results are NOT scientific experiment results.
+Initial formal screening job IDs: dlc1sb4lnx4lv0rh(MAE),dlc22apzfy6zf5vy(lambda.1). First observed rates approximately1650singlefingerimages/sMAE,550/sforce;whole campaign takes multiple hours. Do not present these as stable final throughput estimates.
+
+Expected outputs per actual run:
+last.pt(resumableoptimizer/RNG),encoder.pt(final),COMPLETED.json,summary.json,run_config.json,metrics.jsonl,train.jsonl,evaluation/evaluation.json,EVALUATION_COMPLETED.json,JOB_COMPLETE.json.
+Pipeline verifieslambda/seed/epochs/datafingerprint/modelconfig/checkpoint hash/completion markers before advancing. Screening partial/fixture outputs do not satisfy it. A failed/stopped formal run triggersneeds_attention; do not pretend complete or blindly relaunch. Explicit retry support may be in cloud/retry_failed.py; inspect it and confirm latest attemptFailed+oldjobterminal before use. UserStopped must not be automatically resumed. Keep original attempts in ledger.
+
+Final:
+reports/selection.json;reports/final/result_summary.json,report.md,report.html,test_comparison.png;optional scripts/render_report.py produces reviewed_report.html with real HTMLtables and embeddedchart. All6formalruns and evaluations must complete before finalreport. Review numeric results and chart, explainMAEvsMAE+force, singlevsdual, explicitdifference, same-task and two held-outtask results. Force targets areSDK estimates and geometrytargets areDD-derivedproxies, not independentphysicaltruth. Three seedSD differs from episodebootstrapCI; no universalcross-task/cross-sensorclaim. If no improvement, report that plainly.
+After the final report is delivered and no task-owned jobs remain active, pause automationId=automation via app automation_update. Do not leave it running forever. If final results are unavailable, only report actual progress/issue, never fabricate completion.
+
+Final operational update: all45 CPU tests passed (tests/all_tests_final.log). Explicit recovery is implemented in cloud/retry_failed.py, max2attempts/logical, onlyFailed eligible, exact originalrequest reused. control.get_status/stop and pipeline latest-attempt filtering support folder-aware histories. Frozen report renderer is releases/report_v1/render_report.py (hash in configs/report_renderer.json); pipeline invokes it and requires complete_evidence=true before phasecomplete. Controller was restarted safely under pipeline.lock without stopping anyDLCjobs.
+
+Final visualization update: root train.sh now safely launches the existing DLC controller (--status is read-only), not the obsolete4GPU/local command. Frozen releases/visualization_v1 adds final-run val-only reconstruction plots; pipeline requires their visualization.json matching checkpoint. Each formal run will have runs/<logical>/visualization/. CPU visualization on real screening checkpoint passed. All51CPUtests passed; scientific releases/v1 remains unchanged. Controller was restarted again to load visualization stage, without interrupting any cloudtraining.

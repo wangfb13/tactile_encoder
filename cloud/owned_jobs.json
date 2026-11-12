@@ -1,0 +1,122 @@
+[
+  {
+    "logical": "mountcheck",
+    "DisplayName": "wfb_tac_20261112_mountcheck",
+    "submitted_at": "2026-11-11T16:24:32.383554+00:00",
+    "gpu": 0,
+    "request_sha256": "3ddc2cc0ddca24d9d6c0cdebaf6d325686fa8b7a7ed2fe3f94a639c61da86618",
+    "JobId": "dlchvhyize6lnzb0"
+  },
+  {
+    "logical": "smoke_mae",
+    "DisplayName": "wfb_tac_20261112_smoke_mae",
+    "submitted_at": "2026-11-11T16:31:00.938684+00:00",
+    "gpu": 1,
+    "request_sha256": "f554cb9c2457677e6dcecb22058d8f0e93e960c63c346960893d1833b0c59600",
+    "JobId": "dlc1is1czvorzxq8"
+  },
+  {
+    "logical": "smoke_force",
+    "DisplayName": "wfb_tac_20261112_smoke_force",
+    "submitted_at": "2026-11-11T16:31:02.004838+00:00",
+    "gpu": 1,
+    "request_sha256": "3941f607121351cc7e4287fa8e5871e689112a5587b16a094d89609577a2d6a4",
+    "JobId": "dlc1j20ydnw33698"
+  },
+  {
+    "logical": "integration_mae",
+    "DisplayName": "wfb_tac_20261112_integration_mae",
+    "submitted_at": "2026-11-11T16:37:09.546297+00:00",
+    "gpu": 1,
+    "request_sha256": "23c113b0865565bd56771a1de3c5ff36274f48d6d4733c597277f989068b6ab1",
+    "JobId": "dlcetqn0ryhdpk3n"
+  },
+  {
+    "logical": "integration_force",
+    "DisplayName": "wfb_tac_20261112_integration_force",
+    "submitted_at": "2026-11-11T16:37:10.639458+00:00",
+    "gpu": 1,
+    "request_sha256": "e47c264775326c7c5d89fa1c7c9dd175dde243c2218654ea8d59628de2fab536",
+    "JobId": "dlcf3q8ej0qesl24"
+  },
+  {
+    "logical": "screen_l000_s0",
+    "DisplayName": "wfb_tac_20261112_screen_l000_s0",
+    "submitted_at": "2026-11-11T16:40:38.319209+00:00",
+    "gpu": 1,
+    "request_sha256": "3dc8ebee27062faabe4387291349483d5102b4458066835422dd760f19f09dcd",
+    "JobId": "dlc1sb4lnx4lv0rh"
+  },
+  {
+    "logical": "screen_l010_s0",
+    "DisplayName": "wfb_tac_20261112_screen_l010_s0",
+    "submitted_at": "2026-11-11T16:40:39.596020+00:00",
+    "gpu": 1,
+    "request_sha256": "a08ea9940baad969a954a3f8d7f36f69aacabbdcefd595bc5b9ed9ab5e244658",
+    "JobId": "dlc22apzfy6zf5vy"
+  },
+  {
+    "logical": "screen_l030_s0",
+    "DisplayName": "wfb_tac_20261112_screen_l030_s0",
+    "submitted_at": "2026-11-11T16:53:19.966898+00:00",
+    "gpu": 1,
+    "request_sha256": "a7be5ca055cbb8b6cc1c1969dbfed0e7d1c28bedd1186dfb18c34e6453b0b491",
+    "JobId": "dlc04hs0bxfwn32x"
+  },
+  {
+    "logical": "screen_l050_s0",
+    "DisplayName": "wfb_tac_20261112_screen_l050_s0",
+    "submitted_at": "2026-11-11T17:13:06.333101+00:00",
+    "gpu": 1,
+    "request_sha256": "82e0844271655097ba1873cf714b52a8d0b1d8b34036722e6ffd26cb97f2085e",
+    "JobId": "dlc192tma3u3t2l7"
+  },
+  {
+    "logical": "final_mae_s0",
+    "DisplayName": "wfb_tac_20261112_final_mae_s0",
+    "submitted_at": "2026-11-11T17:45:40.669974+00:00",
+    "gpu": 1,
+    "request_sha256": "45e2d0c4916a70b4c91a7b81ba7392dd79747ab6b228b61445408b390d4c60c4",
+    "JobId": "dlcj070ujgc7r9to"
+  },
+  {
+    "logical": "final_force_s0",
+    "DisplayName": "wfb_tac_20261112_final_force_s0",
+    "submitted_at": "2026-11-11T17:45:42.204988+00:00",
+    "gpu": 1,
+    "request_sha256": "135e9b0f94a99d666fda3e857459762f837400aa690c9fc958a3cf41427c551b",
+    "JobId": "dlcjk67m3ort7qdx"
+  },
+  {
+    "logical": "final_mae_s1",
+    "DisplayName": "wfb_tac_20261112_final_mae_s1",
+    "submitted_at": "2026-11-11T18:40:40.995255+00:00",
+    "gpu": 1,
+    "request_sha256": "a11be4b7fe7deb2b6ca56672717ae939f4bfb399adcd9c768a56449fd5af8625",
+    "JobId": "dlcbj08wb8arnp6r"
+  },
+  {
+    "logical": "final_force_s1",
+    "DisplayName": "wfb_tac_20261112_final_force_s1",
+    "submitted_at": "2026-11-11T19:35:45.115502+00:00",
+    "gpu": 1,
+    "request_sha256": "2ca9fca3f3ae7b6d9df53dfb0491ba6e17b24c2025716a4d262877c613b4a444",
+    "JobId": "dlc4vs93f8g3at05"
+  },
+  {
+    "logical": "final_mae_s2",
+    "DisplayName": "wfb_tac_20261112_final_mae_s2",
+    "submitted_at": "2026-11-11T20:18:43.116476+00:00",
+    "gpu": 1,
+    "request_sha256": "960076afba23a674f3d967b945c45fba955420a8b1cc6541b078b4f392250f4a",
+    "JobId": "dlc9vyznvq5tmldi"
+  },
+  {
+    "logical": "final_force_s2",
+    "DisplayName": "wfb_tac_20261112_final_force_s2",
+    "submitted_at": "2026-11-11T21:13:58.917313+00:00",
+    "gpu": 1,
+    "request_sha256": "27410c4641bfdadc80342f1f41ea6ce8c6492d2f08192b7c7eb1dd80f9a75962",
+    "JobId": "dlc6amj2jjcws3xr"
+  }
+]
